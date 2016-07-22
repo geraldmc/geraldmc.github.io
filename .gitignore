@@ -1,0 +1,7 @@
+Gemfile
+Gemfile.lock
+_site/
+_drafts/
+.DS_Store
+*Thumbs.db
+*.sublime-workspace
