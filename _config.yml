@@ -1,0 +1,39 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+
+# Setup
+title:               'terr&eacute; bon'
+tagline:             ' / the good earth'
+description:         'Technology promises abundance but has left us in want. More than technology <a href="https://youtu.be/V1fMvLbE85E" target="_blank">we need humanity</a>. More than cleverness, we need kindness and gentleness. Without these our lives are empty.'
+#url:                 https://geraldmc.github.io/
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Gerald McCollam
+  url:               https://geraldmc.github.io/
+  email:             gerald.mccollam@gmail.com
+
+# Github
+#github:
+#  repo:           https://github.com/geraldmc/geraldmc.github.io
+#  feedback:       https://github.com/geraldmc/feedback/issues/new
+
+# Custom vars
+version:             0.0.1
+timezone:            'America/Chicago'
+show_drafts:         False
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git"]
+encoding:     "utf-8"
+markdown:     kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+

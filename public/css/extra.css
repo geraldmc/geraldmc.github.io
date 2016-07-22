@@ -1,0 +1,13 @@
+.profile {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  background: url('../geraldmc.png') no-repeat center center;
+  background-size: 99% auto;
+}
+.profile img {
+  opacity: 0;
+  filter: alpha(opactiy=0);
+}
