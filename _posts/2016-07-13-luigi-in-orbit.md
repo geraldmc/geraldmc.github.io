@@ -117,9 +117,12 @@ result
 [('2016-07-03', 'LC80220402016185LGN00')]
 {% endhighlight %}
 
-The output is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover was reported are captured. This filtering step is important for later on in the processing chain. We store these and begin our next phase. 
+<!-- <script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
+-->
 
-In these two steps we've searched AWS for Landsat 8 imagery taken during the week of July 3 through July 10, centered on New Orleans, and filtered for cloud cover.   
+The output is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover was reported are captured. This filtering step is important for later on in the processing chain.  
+
+We've searched AWS for Landsat 8 imagery taken between July 3 and July 10, centered on New Orleans and filtered the result for cloud cover. We'll store these locally and begin our next phase.  
 
 [Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery.
 

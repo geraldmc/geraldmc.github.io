@@ -9,7 +9,7 @@ A `connectome` is a wiring diagram of connections between neurons ranging in sca
 
 The human brain holds roughly <strong>$${10^{11}}$$</strong> or 100 billion neurons. Each has on average 7,000 synapses making the number of potential links between elements on the order of $${10^{15}}$$ or`one quadrillion`. To give an idea of what a quadrillion looks like:
 
-![1 quadrillion]({{ site.url }}/assets/quadrillion_pennies.jpg)
+![1 quadrillion]({{ site.url }}/assets/quadrillion_pennies.jpg){:height="350px" width="370px"}
 
 This is a cube of copper pennies 2,730 feet long on each side. The smaller cube (next to the Empire State Building) represents 1 trillion pennies. (See [The MegaPenny Project](http://www.kokogiak.com/megapenny/default.asp)). 
 
@@ -27,8 +27,16 @@ _Caenorhabditis elegans_ is a nematode roundworm, generally slender and circular
 
 By far the most complex organ in C. elegans is its nervous system. Of a total of 959 cells, 301 in C. elegans are neuronal. 20 of these are located in the organism's pharynx (which has its own nervous system). The remaining 281 make up its various head and tail ganglia along with additional ganglia running along its main longitudinal axis.
 
-As a species, C.elegans is remarkably consistent in terms of its anatomical structure, especially with regard to the number and placement of neurons in its nervous system. That is to say, the neurons of one particular C. elegans is remarkably consistent - is in fact identical - to that of any other C. elegans. Such consistency has allowed researchers to amass a large and increasingly accurate portrait of C. elegans systems biology over time. Furthermore, all of this information is available to whomever is interested in it (though you still have to search for it).
+As a species, C.elegans is remarkably consistent in terms of its anatomical structure, especially with regard to the number and placement of neurons. That is to say, the neurons of one particular C. elegans is remarkably consistent - is in fact identical - to that of any other C. elegans. Such consistency has allowed researchers to amass a large and increasingly accurate portrait of C. elegans systems biology over time. Furthermore, all of this information is available to whomever is interested in it (though you still have to search for it).
 
 Constancy of cell number and of cell position from individual to individual eutely
+
+
+---
+
+### Closeness 
+
+![adjacency matrix]({{ site.url }}/assets/adjmatrix.png){:height="350px" width="370px"}
+
 
 ---
