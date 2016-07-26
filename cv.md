@@ -9,5 +9,4 @@ title: CV
 
 ---
 
-
-#### See my [linkedin](https://www.linkedin.com/in/geraldmc). 
+#### See [linkedin](https://www.linkedin.com/in/geraldmc) 

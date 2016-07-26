@@ -1,0 +1,46 @@
+[34m===> [0m4 items were found
+[32m{
+    "limit": 10,
+    "results": [
+        {
+            "cloud": 46.51,
+            "date": "2016-07-10",
+            "path": "023",
+            "row": "039",
+            "sat_type": "L8",
+            "sceneID": "LC80230392016192LGN00",
+            "thumbnail": "http://earthexplorer.usgs.gov/browse/landsat_8/2016/023/039/LC80230392016192LGN00.jpg"
+        },
+        {
+            "cloud": 31.9,
+            "date": "2016-07-10",
+            "path": "023",
+            "row": "040",
+            "sat_type": "L8",
+            "sceneID": "LC80230402016192LGN00",
+            "thumbnail": "http://earthexplorer.usgs.gov/browse/landsat_8/2016/023/040/LC80230402016192LGN00.jpg"
+        },
+        {
+            "cloud": 19.3,
+            "date": "2016-07-03",
+            "path": "022",
+            "row": "040",
+            "sat_type": "L8",
+            "sceneID": "LC80220402016185LGN00",
+            "thumbnail": "http://earthexplorer.usgs.gov/browse/landsat_8/2016/022/040/LC80220402016185LGN00.jpg"
+        },
+        {
+            "cloud": 22.42,
+            "date": "2016-07-03",
+            "path": "022",
+            "row": "039",
+            "sat_type": "L8",
+            "sceneID": "LC80220392016185LGN00",
+            "thumbnail": "http://earthexplorer.usgs.gov/browse/landsat_8/2016/022/039/LC80220392016185LGN00.jpg"
+        }
+    ],
+    "status": "SUCCESS",
+    "total": 4,
+    "total_returned": 4
+}[0m
+['Search completed!']

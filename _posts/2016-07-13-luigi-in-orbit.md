@@ -1,27 +1,31 @@
 ---
 layout: post
 title: Luigi In Orbit
----
-
-`TL;DR` This post should be split into three or four and eventually will.
-
-Here I'll describe an example of how Luigi can be used to orchestrate a more complex set of tasks. In this case a Luigi pipeline is implemented to coordinate a periodic search and retrieval of [LANSAT 8](http://landsat.usgs.gov/landsat8.php) image data. It prepares the data for upload onto`S3`, runs some [scikit-image](http://scikit-image.org/) analytics, and finally dumps the result so that an API endpoint can serve up the result (through a custom [Flask](https://www.youtube.com/watch?v=px_vg9Far1Y) web app).  I don't expect readers to understand (or care) how all these separate technologies work. *How Luigi glues them all together is the point*. Primarily, I hope to demonstrate that a tool like Luigi can help shield the data engineer from knowing each and every detail regarding how a data pipeline actually functions. Before we open up the hood some background is in order.
+#published: false
+#categories: ['luigi', 'data engineering']
+#tags: ['luigi', 'data engineering']
 
 ---
 
-### An AWeSome Band
-About a year ago Amazon Web Services began providing up-to-date access to Landsat via their (highly reliable) AWS infrastructure. The AWS open data initiative includes an extensive archive of Landsat 8 imagery data - with individual spectral bands not previously available - allowing anyone access to this information via predictable download endpoints. 
+`TL;DR` This post should be split into three or four.
 
-Landsat 8 imagery is an incredibly powerful resource. People from around the world now rely on it for everything from evaluating drought and predicting agricultural yields to tracking conflict.
+Here I'll describe an example of how Luigi can be used to orchestrate a more complex set of tasks. In this case a Luigi pipeline helps to coordinate the periodic search and retrieval of [LANSAT 8](http://landsat.usgs.gov/landsat8.php) image data. It then prepares that data for upload onto`S3`, runs some [scikit-image](http://scikit-image.org/) and [scikit-learn](http://scikit-image.org/) analytics on it, and finally dumps the output so that an API endpoint can serve up the result (through a custom [Flask](https://www.youtube.com/watch?v=px_vg9Far1Y) web app).  I don't expect readers to understand how all these separate technologies work. *How Luigi glues them together is the point*. Primarily, I hope to demonstrate that a tool like Luigi can help shield the data engineer from knowing each and every detail regarding how a  pipeline actually functions. Before we open up the hood some background is in order.
+
+---
+
+### AWeSome Bands
+About a year ago Amazon Web Services began providing up-to-date access to Landsat 8 data via their (highly reliable) AWS infrastructure. The AWS open data initiative includes an extensive archive of Landsat 8 imagery - including individual spectral bands not previously available - allowing anyone access to this valuable information via predictable download endpoints. 
+
+Landsat 8 imagery is an incredibly powerful resource. People from around the world have come to rely on it for everything from evaluating drought and predicting agricultural yields to tracking conflict.
 
 
 ---
 
 ![South Louisiana]({{ site.url }}/assets/LC80220392016185LGN00.jpg){:height="350px" width="350px"}
 
- Landsat 8 provides moderate-resolution imagery of Earth’s surface, from 15 metres (panchromatic) to 30 metres (multispectral) to 100 metres (thermal) per pixel. The above is a capture of southeast Louisiana roughly centered on [Lake Ponchartrain](https://en.wikipedia.org/wiki/Lake_Pontchartrain). The term *per pixel* refers to the ground sample distance or `GSD` which is a way of relating distance between pixel centers (in the image) to actual distances measured on the ground. For example, in an image with a one-meter GSD, adjacent pixel locations are 1 metre apart on the ground. In the above each pixel represents a 15 x 15 m "box", or 2421 square feet (or the average size of a condo in Manhattan).
+ Landsat 8 provides moderate-resolution imagery of Earth’s surface, from 15 metres (panchromatic) to 30 metres (multispectral) to 100 metres (thermal) per pixel. (The above is a capture of southeast Louisiana roughly centered on [Lake Ponchartrain](https://en.wikipedia.org/wiki/Lake_Pontchartrain)). The term *per pixel* refers to the ground sample distance or `GSD` which is a way of relating distance between pixel centers to actual distances measured on the ground. For example, in an image with a one-meter GSD, adjacent pixel locations are 1 metre apart on the ground. In the above, each pixel represents a 15 x 15 m "box", or 2421 square feet (or the size of an average condo in Manhattan).
 
-Landsat 8 operates in the visible, near-infrared, short wave infrared, and thermal infrared spectrums (9 bands total). For the purposes of this project we are interested only in the red, green and near-infrared bands. The following chart specifies several of these bands with regard to the satellite's Operational Land Imager ([OLI](https://en.wikipedia.org/wiki/Landsat_8)). 
+Landsat 8 operates in the visible, near-infrared, short wave infrared, and thermal infrared spectrums (9 bands total). For the purposes of this project we are interested only in the red, green and near-infrared bands. The following chart specifies several bands with regard to the satellite's Operational Land Imager ([OLI](https://en.wikipedia.org/wiki/Landsat_8)). 
 
 <table>
   <thead>
@@ -82,32 +86,41 @@ Panchromatic is the combination of all human-visible wavelengths of the spectrum
 
 ### Getting Started
 
-Landsat data can be a challenge to work with, especially for individuals or small organizations who stand to benefit most from using it. Without the right tools, it can take a novice a day (or a week) to collect, composite, color correct, and sharpen Landsat 8 imagery. To help interact with the service I'm using an open source toolkit for processing Landsat imagery called [landsat-util](https://pythonhosted.org/landsat-util/index.html). This tool helps us do three essential things:
+Landsat data can be a challenge to work with, especially for individuals or small organizations lacking tools. It can take a novice a day (or a week) to collect, composite, color correct, and sharpen Landsat 8 imagery. To help I'm using an open source toolkit called [landsat-util](https://pythonhosted.org/landsat-util/index.html). While this is not the only way to gain access to Landsat (more on that later) this particular tool makes it very easy to search, download, and process directly from the command line. 
 
-* It automates Landsat metadata searching.
-* Provides a great command line tool for downloading images.
-* Helps process the data and prepare it for display.
+Here is an example of searching with landsat-util: 
 
-{% highlight bash %}
-landsat search --start 07/03/2016 --end 07/10/2016 --lat 29.909273 --lon -90.920771{% endhighlight %}
+{% highlight python %}
+>> landsat search 
+  --start 07/03/2016 
+  --end 07/10/2016 
+  --lat 29.909273 
+  --lon -90.920771
+  {% endhighlight %}
 
+The output of above is a JSON response which can be stored as `out.json` on the local file system. Next we parse the file and pull out only those elements that are of interest. 
 
-{% highlight bash %}
->> landsat download LC80220392016185LGN00 --bands 3458
+{% highlight python %}
+import json
+from collections import OrderedDict
+
+result = []
+with open('out.json', 'r') as f:
+  d = json.load(f, object_hook=OrderedDict)
+  results = d['results']
+
+  for i, data in enumerate(results):  
+    if data['cloud'] < 20:
+      result.append((data['date'], data['sceneID']))
+
+result
+[('2016-07-03', 'LC80220402016185LGN00')]
 {% endhighlight %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+The output is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover was reported are captured. This filtering step is important for later on in the processing chain. We store these and begin our next phase. 
 
-{% highlight bash %}
->> landsat search  
-  --cloud 4 
-  --start "August 1 2013" 
-  --end "August 25 2014" country 'Vatican'
+In these two steps we've searched AWS for Landsat 8 imagery taken during the week of July 3 through July 10, centered on New Orleans, and filtered for cloud cover.   
 
-{% endhighlight %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-
-[Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that can be used to browse, filter, sort, and download satellite imagery.
+[Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery.
 
 ---
