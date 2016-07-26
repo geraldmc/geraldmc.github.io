@@ -100,26 +100,6 @@ Here is an example of searching with landsat-util:
 
 The output of above is a JSON response which can be stored as `out.json` on the local file system. Next we parse the file and pull out only those elements that are of interest. 
 
-```python
-import json
-from collections import OrderedDict
-
-result = []
-with open('out.json', 'r') as f:
-  d = json.load(f, object_hook=OrderedDict)
-  results = d['results']
-
-  for i, data in enumerate(results):  
-    if data['cloud'] < 20:
-      result.append((data['date'], data['sceneID']))
-
-result
-[('2016-07-03', 'LC80220402016185LGN00')]
-```
-
-![1 quadrillion]({{ site.url }}/assets/fig1.png){:height="300px" width="400px"}
-
-
 
 <script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
 

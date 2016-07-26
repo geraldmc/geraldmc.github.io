@@ -8,105 +8,18 @@ The `Task` is a key abstraction in Luigi and forms the basic building block of a
 
 With input provided by the requires method, the `run` method defines what you do with the preceding input. Finally, `output` is where you store the result.
 
-<br>
 
-{% highlight python %}
+<!-- {% highlight python %} {% endhighlight %} -->
 
-import luigi
-
-class FirstTask(luigi.Task):
-
-    # The date at which this query will be run.
-    report_date_param = luigi.DateParameter()
-
-    def requires(self):
-        """
-        What needs doing before FirstTask can begin?
-        This computes a task dependency graph.
-        """
-        return [UpstreamTask(self.report_date_param)]
-
-    def run(self):
-        """
-        Luigi calls this if the Task needs to be run.
-        """
-        # Free to do whatever, i.e. call python
-        # methods, run shell scripts, call APIs.
-
-    def output(self):
-        """
-        Once run, this is where our output goes.
-        We must check whether this Target exists 
-        as a pre-condition for running the Task.
-        """
-        return S3Target('s3://a-bucket/a-directory')
-
-{% endhighlight %}
+<script src="https://gist.github.com/geraldmc/ff9db47392846dbcc4b1534b1de2abe0.js"></script>
 
 ---
 
 While the above gets our feet wet, it is only minimally useful in helping us understand the real benefit of Luigi. We can easily build up more complex cases, as in the following.
 
-<br>
-{% highlight python %}
 
-import luigi
-from luigi.mock import MockTarget 
+<script src="https://gist.github.com/geraldmc/ecf9d0df92473e88f593717722772622.js"></script>
 
-class FirstTask(luigi.Task):
-    # First task
- 
-    def output(self):
-        return MockTarget("SimpleTask", 
-            mirror_on_stderr=True)
- 
-    def run(self):
-        _write = self.output().open('w')
-        _write.write(u"Simple Task is complete!\n")
-        _write.close()
-
-class SecondTask(luigi.Task):
-    # Depends on FirstTask
-        
-    def requires(self):
-        return FirstTask()
-
-    def output(self):
-        return MockTarget("SecondTask", 
-            mirror_on_stderr=True)
-    
-    def run(self):
-        _read = self.input().open("r")
-        _write = self.output().open('w')
-        for first_ends in _read:
-            outval = u"Second Task after "+first_ends+u"\n"
-            _write.write(outval)
-        
-        _write.close()
-        _read.close()
-
-class ThirdTask(luigi.Task):    
-    # Depends on SecondTask
-        
-    def requires(self):
-        return SecondTask()
-
-    def output(self):
-        return MockTarget("ThirdTask", 
-            mirror_on_stderr=True)
-    
-    def run(self):
-        # third thing to do
-        pass
- 
-if __name__ == '__main__':
-    luigi.run(["--local-scheduler"], 
-        main_task_cls=ThirdTask)
-
-
-{% endhighlight %}
-
-<br>
 
 Note that while the requires() and output() blocks can be run more than once, that is generally a bad idea. Long-running code should always be placed in the run() method. In general dependencies should be placed in order, i.e. if I want to extract, copy and delete something then delete should depend on copy, copy on extract, etc.
 
@@ -117,8 +30,8 @@ Below is ouput from the above.
 
 DEBUG: Checking if SecondTask() is complete
 DEBUG: Checking if FirstTask() is complete
-INFO: Informed scheduler that task SecondTask has status PENDING
-INFO: Informed scheduler that task FirstTask has status PENDING
+INFO: Informed scheduler that SecondTask PENDING
+INFO: Informed scheduler that FirstTask PENDING
 INFO: Done scheduling tasks
 INFO: Running Worker with 1 processes
 DEBUG: Asking scheduler for work...
@@ -126,24 +39,24 @@ DEBUG: Pending tasks: 2
 INFO: [pid 44365] Worker running FirstTask()
 <strong>FirstTask: First Task is complete!</strong>
 INFO: [pid 44365] Worker done FirstTask()
-DEBUG: 1 running tasks, waiting for next task to finish
-INFO: Informed scheduler that task FirstTask has status DONE
+DEBUG: 1 running tasks, waiting for next to finish
+INFO: Informed scheduler that FirstTask DONE
 DEBUG: Asking scheduler for work...
 DEBUG: Pending tasks: 1
 INFO: [pid 44365] Worker running SecondTask()
 <strong>SecondTask: Second Task after First Task is complete!</strong>
 INFO: [pid 10305] Worker done SecondTask()
-DEBUG: 1 running tasks, waiting for next task to finish
-INFO: Informed scheduler that task has status DONE
+DEBUG: 1 running tasks, waiting for next to finish
+INFO: Informed scheduler that task status DONE
 DEBUG: Asking scheduler for work...
 DEBUG: Pending tasks: 1
 INFO: [pid 10305] Worker running ThirdTask()
 INFO: [pid 10305] Worker done ThirdTask()
-DEBUG: 1 running tasks, waiting for next task to finish
-INFO: Informed scheduler that task has status DONE
+DEBUG: 1 running tasks, waiting for next to finish
+INFO: Informed scheduler task status DONE
 DEBUG: Asking scheduler for work...
 DEBUG: Done
-DEBUG: There are no more tasks to run at this time
+DEBUG: No more tasks to run at this time
 INFO: Worker Shutting down Keep-Alive thread
 
 ===== Luigi Execution Summary =====
