@@ -100,7 +100,7 @@ Here is an example of searching with landsat-util:
 
 The output of above is a JSON response which can be stored as `out.json` on the local file system. Next we parse the file and pull out only those elements that are of interest. 
 
-{% highlight python %}
+```python
 import json
 from collections import OrderedDict
 
@@ -115,10 +115,14 @@ with open('out.json', 'r') as f:
 
 result
 [('2016-07-03', 'LC80220402016185LGN00')]
-{% endhighlight %}
+```
 
-<!-- <script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
--->
+![1 quadrillion]({{ site.url }}/assets/fig1.png){:height="300px" width="400px"}
+
+
+
+<script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
+
 
 The output is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover was reported are captured. This filtering step is important for later on in the processing chain.  
 
