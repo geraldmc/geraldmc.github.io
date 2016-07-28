@@ -40,7 +40,7 @@ Enough talk, let's have a look at the data.
 ![Figure 1]({{ site.url }}/assets/fig2.png){:height="350px" width="370px"}
 
 
-![Figure 2]({{ site.url }}/assets/fig3.png){:height="530px" width="770px"}
+![Figure 2]({{ site.url }}/assets/fig3.png){:height="500px" width="770px"}
 
 
 
