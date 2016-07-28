@@ -29,16 +29,39 @@ By far the most complex organ in _C. elegans_ is its nervous system. Of a total 
 
 As a species, _C. elegans_ is remarkably consistent in terms of anatomical structure, especially with regard to the number and placement of its neurons. That is to say, the neurons of any one instance of _C. elegans_ is functionally identical to that of any other. Such consistency has allowed researchers to amass a large and increasingly accurate portrait of _C. elegans_ systems biology over time. Furthermore, all of this information is available to whomever is interested  (though you have to look for it).
 
-Constancy of cell number and of cell position from individual to individual is an attribute known as `eutely`. Eutelic organisms have a fixed number of somatic cells when they reach maturity, the exact number of which is constant for any individual of the species.
+Constancy of cell number and of cell position from individual to individual is an attribute known as `eutely`. Eutelic organisms have a fixed number of somatic cells when they reach maturity, the exact number of which is constant for any individual of the species. 
 
 Enough talk, let's have a look at the data. 
 
+---
+
+### Data 'R' Us
+
+Here I'll use the `R` language to help develop some initial insight into the connectome dataset. Before we can use R we first need to get the data into R and luckily it supports all sorts of data formats. 
+
++ Flat files can be imported into R with functions like [read.table()](http://www.rdocumentation.org/packages/utils/functions/read.table) and [read.csv()](http://www.rdocumentation.org/packages/utils/functions/read.table) from the pre-installed utils package. The packages used to import flat file data in R are [readr](https://cran.r-project.org/web/packages/readr/index.html) and [fread](http://www.rdocumentation.org/packages/data.table/functions/fread).
++ Excel files are imported into R with either the [readxl](https://github.com/hadley/readxl) package, [gdata](https://cran.r-project.org/web/packages/gdata/) or with the [XLConnect](https://cran.r-project.org/web/packages/XLConnect/) package. 
++ The [haven](https://github.com/hadley/haven) package lets you import SAS, STATA and SPSS data files into R. 
++ We can connect to a database using [RMySQL](https://cran.r-project.org/web/packages/RMySQL/), [RpostgreSQL](https://cran.r-project.org/web/packages/RPostgreSQL) or the [ROracle](https://cran.r-project.org/web/packages/ROracle/index.html) packages. For graph-based database like [Neo4J](https://neo4j.com/top-ten-reasons/) there's [RNeo4j](https://github.com/nicolewhite/RNeo4j).
++ Web scrapers can try out [rvest](https://cran.r-project.org/web/packages/rvest/).
+
+The following R script loads a CSV file containing an abridged version of the complete _C. elegans_ dataset. 
+
+<script src="https://gist.github.com/geraldmc/066d2e78cca5816d34f9d22db6730529.js"></script>
+
+Over time _C. elegans'_ eutelic property has allowed every cell in the organism to be carefully plotted and catalogued by researchers. This effort has resulted in each cell being labeled with a proper name - ADAL, ADAR, ADEL, etc - and a position in the organism that is consistent from one instance to the next.
+
+After coercing the data into matrix form (line 20) we create an adjacency graph object in line 23. From this we can see that these are indeed connected data.  
+
 ![adjacency matrix]({{ site.url }}/assets/adjmatrix.png){:height="350px" width="370px"}
 
-<script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
+<br>
+
+A quick plot reveals that some nodes are more highly connected than others. Bear in mind that this is just a sample of the complete dataset.
 
 ![Figure 1]({{ site.url }}/assets/fig2.png){:height="350px" width="370px"}
 
+Finally, we use [ggnet()](https://github.com/briatte/ggnet) to hone in a bit more on the degree of connectivity. The ggnet and ggnet2 packages allow us to visualize networks as [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html) objects.
 
 ![Figure 2]({{ site.url }}/assets/fig3.png){:height="500px" width="770px"}
 
