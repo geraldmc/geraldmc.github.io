@@ -66,8 +66,6 @@ Finally, we use [ggnet()](https://github.com/briatte/ggnet) to hone in a bit mor
 ![Figure 2]({{ site.url }}/assets/fig3.png){:height="500px" width="770px"}
 
 
-
-
 ---
 
 <!-- <pre>
