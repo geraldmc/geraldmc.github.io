@@ -25,9 +25,9 @@ Mapping networks at the level of connections got its start way back in the 70s w
 
 _Caenorhabditis elegans_ is a nematode roundworm, generally slender and circular in cross section. It is non-pathogenic and grows to about 1 mm in length. While C. elegans is about as primitive an organism as can be, it shares many essential characteristics relevant to the study of human biology, in particular to human neurobiology.
 
-By far the most complex organ in C. elegans is its nervous system. Of a total of 959 cells, 301 in C. elegans are neuronal. 20 of these are located in the organism's pharynx (which has its own nervous system). The remaining 281 make up its various head and tail ganglia along with additional ganglia running along its main longitudinal axis.
+By far the most complex organ in _C. elegans_ is its nervous system. Of a total of 959 cells, 301 in _C. elegans_ are neuronal. 20 of these are located in the organism's pharynx (which has its own nervous system). The remaining 281 make up its various head and tail ganglia along with additional ganglia running along its main longitudinal axis.
 
-As a species, C.elegans is remarkably consistent in terms of anatomical structure, especially with regard to the number and placement of its neurons. That is to say, the neurons of any one instance of C. elegans is functionally identical to that of any other. Such consistency has allowed researchers to amass a large and increasingly accurate portrait of C. elegans systems biology over time. Furthermore, all of this information is available to whomever is interested  (though you have to look for it).
+As a species, _C. elegans_ is remarkably consistent in terms of anatomical structure, especially with regard to the number and placement of its neurons. That is to say, the neurons of any one instance of _C. elegans_ is functionally identical to that of any other. Such consistency has allowed researchers to amass a large and increasingly accurate portrait of _C. elegans_ systems biology over time. Furthermore, all of this information is available to whomever is interested  (though you have to look for it).
 
 Constancy of cell number and of cell position from individual to individual is an attribute known as `eutely`. Eutelic organisms have a fixed number of somatic cells when they reach maturity, the exact number of which is constant for any individual of the species.
 
@@ -35,13 +35,13 @@ Enough talk, let's have a look at the data.
 
 ![adjacency matrix]({{ site.url }}/assets/adjmatrix.png){:height="350px" width="370px"}
 
-![Figure 1]({{ site.url }}/assets/fig1.png){:height="350px" width="370px"}
-
 <script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
 
-![Figure 2]({{ site.url }}/assets/fig2.png){:height="350px" width="370px"}
+![Figure 1]({{ site.url }}/assets/fig2.png){:height="350px" width="370px"}
 
-![Figure 3]({{ site.url }}/assets/fig3.png){:height="350px" width="370px"}
+
+![Figure 2]({{ site.url }}/assets/fig3.png){:height="530px" width="770px"}
+
 
 
 
