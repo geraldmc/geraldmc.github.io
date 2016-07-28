@@ -13,7 +13,7 @@ Here I'll describe an example of how Luigi can be used to orchestrate a more com
 
 ---
 
-### AWeSome Bands
+### **Aw**e**s**ome Bands
 About a year ago Amazon Web Services began providing up-to-date access to Landsat 8 data via their (highly reliable) AWS infrastructure. The AWS open data initiative includes an extensive archive of Landsat 8 imagery - including individual spectral bands not previously available - allowing anyone access to this valuable information via predictable download endpoints. 
 
 Landsat 8 imagery is an incredibly powerful resource. People from around the world have come to rely on it for everything from evaluating drought and predicting agricultural yields to tracking conflict.
@@ -104,10 +104,10 @@ The output of above is a JSON response which can be stored as `out.json` on the 
 <script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
 
 
-The output is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover was reported are captured. This filtering step is important for later on in the processing chain.  
+The result is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover occurred are captured. This filtering step is important for later in the processing chain.  
 
-We've searched AWS for Landsat 8 imagery taken between July 3 and July 10, centered on New Orleans and filtered the result for cloud cover. We'll store these locally and begin our next phase.  
+We've searched Landsat for imagery taken between July 3 and July 10, roughly centered on New Orleans, and filtered the result for cloud cover. After storing these locally we can begin the next phase. 
 
-[Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery.
+<!-- [Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery. -->
 
 ---

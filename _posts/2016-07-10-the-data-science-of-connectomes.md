@@ -13,9 +13,9 @@ The human brain holds roughly <strong>$${10^{11}}$$</strong> or 100 billion neur
 
 This is a cube of copper pennies 2,730 feet long on each side. The smaller cube (next to the Empire State Building) represents 1 trillion pennies. (See [The MegaPenny Project](http://www.kokogiak.com/megapenny/default.asp)). 
 
-Current estimates of brain connectivity often fail to take into account the non-static nature of the brain's functional makeup. The brain possesses an extraordinary ability to modify its  structure and function in response to change, both as the result of external events and in accordance with the organism's innate developmental blueprint. 
+Current estimates of brain connectivity often fail to take into account the brain's mercurial makeup. The brain possesses an extraordinary ability to modify its own structure and function in response to change, both as the result of external events and in accordance with the organism's innate developmental blueprint. 
 
-Mapping networks at the level of connections got its start way back in the 70s with the study of the roundworm`C.Elegans`. More recently the field of connectomics has seen rapid rise in part due to computational advances that allow for the semi-automated collection and analysis of previously unheard of volumes of data. Here I describe some of the challenges that arise when managing and modeling connectome data and provide suggestions for how to manage these.
+Mapping networks at the level of connections got its start way back in the 70s with the study of the roundworm`C.Elegans`. More recently the field of connectomics has seen rapid rise in part due to computational advances that allow for the semi-automated collection and analysis of previously unheard of volumes of data. Here I describe some of the challenges that arise when managing and modeling connectome data.
 
 ---
 
@@ -27,16 +27,36 @@ _Caenorhabditis elegans_ is a nematode roundworm, generally slender and circular
 
 By far the most complex organ in C. elegans is its nervous system. Of a total of 959 cells, 301 in C. elegans are neuronal. 20 of these are located in the organism's pharynx (which has its own nervous system). The remaining 281 make up its various head and tail ganglia along with additional ganglia running along its main longitudinal axis.
 
-As a species, C.elegans is remarkably consistent in terms of its anatomical structure, especially with regard to the number and placement of neurons. That is to say, the neurons of one particular C. elegans is remarkably consistent - is in fact identical - to that of any other C. elegans. Such consistency has allowed researchers to amass a large and increasingly accurate portrait of C. elegans systems biology over time. Furthermore, all of this information is available to whomever is interested in it (though you still have to search for it).
+As a species, C.elegans is remarkably consistent in terms of anatomical structure, especially with regard to the number and placement of its neurons. That is to say, the neurons of any one instance of C. elegans is functionally identical to that of any other. Such consistency has allowed researchers to amass a large and increasingly accurate portrait of C. elegans systems biology over time. Furthermore, all of this information is available to whomever is interested  (though you have to look for it).
 
-Constancy of cell number and of cell position from individual to individual eutely
+Constancy of cell number and of cell position from individual to individual is an attribute known as `eutely`. Eutelic organisms have a fixed number of somatic cells when they reach maturity, the exact number of which is constant for any individual of the species.
 
-
----
-
-### Closeness 
+Enough talk, let's have a look at the data. 
 
 ![adjacency matrix]({{ site.url }}/assets/adjmatrix.png){:height="350px" width="370px"}
 
+![Figure 1]({{ site.url }}/assets/fig1.png){:height="350px" width="370px"}
+
+<script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
+
+![Figure 2]({{ site.url }}/assets/fig2.png){:height="350px" width="370px"}
+
+![Figure 3]({{ site.url }}/assets/fig3.png){:height="350px" width="370px"}
+
+
 
 ---
+
+<!-- <pre>
+       src   dest category  weight
+0     ADAL   ADEL       EJ       1
+1     ADAL   ADFL       EJ       1
+2     ADAL   AVDR       EJ       2
+3     ADAL   PVQL       EJ       1
+4     ADAL   AIAL       Sp       1
+5     ADAL   AIBL        R       1
+6     ADAL   AIBR       Rp       2
+
+</pre>
+
+-->
