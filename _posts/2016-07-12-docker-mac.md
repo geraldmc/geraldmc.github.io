@@ -50,7 +50,7 @@ The answer depends on your environment, the size of your application and the amo
 
 An easy was to get started with Docker is to download [Docker for Mac](https://www.docker.com/products/docker#/mac) (or [Docker Windows](https://www.docker.com/products/docker#/mac)). Each is a newly-native installation of Docker. From here you can start by creating a `Dockerfile`. This is where all application configurations are determined and is the blueprint for a Docker Image.
 
-One misconception about Docker is a by-product of its current focus on microservices. Docker is great for microservice-based apps, but it can just as well be used to containerize large monolithic apps. Docker containers package any application (monolithic or distributed) and can migrate workloads to any infrastructure.
+One misconception about Docker is a by-product of its current focus on microservices. Docker is great for microservice-based apps, but it can just as well be used to containerize large monolithic applications. Docker containers package any application (monolithic or distributed) and can migrate workloads to any infrastructure.
 
 
 ---
