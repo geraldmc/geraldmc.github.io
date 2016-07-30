@@ -30,19 +30,19 @@ Ops teams love Docker because it lets them more easily manage and secure environ
 
 ### What is the infrastructure cost?
 
-The Docker engine itself is a very lightweight (around 80 MB total) component that is installed on a bare metal server, a VM or in the cloud. This is the only infrastructure needed. No hardware required.
+The Docker engine itself is a very lightweight (around 80 MB total) component that is installed on a bare metal server, a VM or in the cloud. This is the only infrastructure needed.
 
 ---
 
 ### Can Docker help manage my infrastructure?
 
-Docker isn’t designed to manage infrastructure (the platform itself is infrastructure agnostic). Instead, it *manages applications* and helps to ensure that apps run smoothly, regardless of infrastructure. This provides the agility, portability and control necessary to forget about infrastructure. What you can't forget your team is still responsible for.
+Docker isn’t designed to manage infrastructure (the platform itself is infrastructure agnostic). Instead, it *manages applications* and helps to ensure that apps run smoothly, regardless of infrastructure. This provides the agility, portability and control necessary to forget about infrastructure. What you can't forget about your team is still responsible for.
 
 ---
 
 ### How many containers may be run per host?
 
-The answer depends on your environment, the size of your application and the amount of available resources (i.e. CPU). Containers don't magically create new CPUs. They do provide a more efficient way of utilizing those resources. Containers are lightweight and only last as long as the process they run.
+The answer depends on your environment, the size of your application and the amount of available resources (i.e. CPU). Containers don't magically create new CPUs though they do provide a more efficient way of utilizing them. Containers are lightweight and often last only as long as the process they run.
 
 ---
 
