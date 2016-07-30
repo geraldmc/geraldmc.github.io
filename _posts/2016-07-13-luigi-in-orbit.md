@@ -88,6 +88,10 @@ Panchromatic is the combination of all human-visible wavelengths of the spectrum
 
 Landsat data can be a challenge to work with, especially for individuals or small organizations lacking tools. It can take a novice a day (or a week) to collect, composite, color correct, and sharpen Landsat 8 imagery. To help I'm using an open source toolkit called [landsat-util](https://pythonhosted.org/landsat-util/index.html). While this is not the only way to gain access to Landsat (more on that later) this particular tool makes it very easy to search, download, and process directly from the command line. 
 
+Searching with landsat-util makes us of the [landsat-api](https://github.com/developmentseed/landsat-api) which enables making geospatial, date and text queries on Landsat-8 metadata.
+
+The metadata is released in csv format by USGS on a daily basis
+
 Here is an example of searching with landsat-util: 
 
 {% highlight python %}
@@ -98,7 +102,7 @@ Here is an example of searching with landsat-util:
   --lon -90.920771
   {% endhighlight %}
 
-The output of above is a JSON response which can be stored as `out.json` on the local file system. Next we parse the file and pull out only those elements that are of interest. 
+The output of above is a JSON response which can be stored as `out.json` on the local file system. Next we parse the file and pull out those elements that are of interest. 
 
 
 <script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
@@ -107,6 +111,13 @@ The output of above is a JSON response which can be stored as `out.json` on the 
 The result is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover occurred are captured. This filtering step is important for later in the processing chain.  
 
 We've searched Landsat for imagery taken between July 3 and July 10, roughly centered on New Orleans, and filtered the result for cloud cover. After storing these locally we can begin the next phase. 
+
+{% highlight python %}
+>> landsat download 
+  LC80220402016185LGN00 
+  --bands 345
+{% endhighlight %}
+
 
 <!-- [Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery. -->
 
