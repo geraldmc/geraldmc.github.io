@@ -1,10 +1,10 @@
 Recently, I've been using [Luigi](https://pypi.python.org/pypi/luigi/2.2.0) (created at [Spotify](https://en.wikipedia.org/wiki/Spotify)) for job scheduling and orchestration.  Luigi is a framework for writing data pipelines that can be described as a `workflow manager` similar in respects to [oozie](http://oozie.apache.org/) or [drake](https://github.com/Factual/drake).   
 
-Instead of the familiar XML or yaml configurations, Luigi lets you create a Python object that defines a dependency graph, where dependencies can trigger other dependencies and so forth. This sounds like ETL on the surface, but Luigi goes deeper.
+Instead of the familiar XML or yaml configurations, Luigi lets you create a Python object that defines a dependency graph, where dependencies can trigger other dependencies and so forth. This sounds like `make` on the surface, but Luigi goes deeper.
 
 ### Basics
 
-The `Task` is a key abstraction in Luigi and forms the basic building block of a pipeline. Luigi pipelines are built by chaining together Tasks to form a series of dependencies. The `requires` method of the Task object is what allows a directed graph of dependency to take form. Whatever input is required to run a subsequent task, i.e. input from a db query, a screen scrape, or any combination, is referenced in this block.
+`Task` is a key abstraction and forms the basic building block of a Luigi pipeline. Pipelines are built by chaining together Tasks to form a series of dependencies. The `requires` method of the Task object is what allows a directed graph of dependency to take shape. Whatever input is required to run a subsequent task, i.e. input from a db query, a screen scrape, or any combination, is referenced in this block.
 
 With input provided by the requires method, the `run` method defines what you do with the preceding input. Finally, `output` is where you store the result.
 
