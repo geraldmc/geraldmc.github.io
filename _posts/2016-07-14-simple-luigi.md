@@ -4,7 +4,7 @@ Instead of the familiar XML or yaml configurations, Luigi lets you create a Pyth
 
 ### Basics
 
-`Task` is a key abstraction and forms the basic building block of a Luigi pipeline. Pipelines are built by chaining together Tasks to form a series of dependencies. The `requires` method of the Task object is what allows a directed graph of dependency to take shape. Whatever input is required to run a subsequent task, i.e. input from a db query, a screen scrape, or any combination, is referenced in this block.
+The `Task` abstraction provides the basic building block of a Luigi pipeline. Pipelines are built by chaining together Tasks to form a series of dependencies. The `requires` method of the Task object is what allows a directed graph of dependency to take shape. Whatever input is required to run a subsequent task, i.e. input from a db query, a screen scrape, or any combination, is referenced in this block.
 
 With input provided by the requires method, the `run` method defines what you do with the preceding input. Finally, `output` is where you store the result.
 
