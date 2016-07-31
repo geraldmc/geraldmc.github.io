@@ -52,5 +52,21 @@ An easy way to get started with Docker is with [Docker for Mac](https://www.dock
 
 One misconception about Docker is a by-product of its current focus on microservices. Docker is great for microservice-based apps, but it works just as well to containerize large applications. Docker containers package any application (monolithic or distributed) and can migrate workloads to any infrastructure.
 
-
 ---
+
+### Return to orbit
+
+Assuming that you've downloaded and installed Docker, here's an easy way to get landsat-util running locally on your machine.
+
+{% highlight python %}
+>> docker pull developmentseed/landsat-util
+{% endhighlight %}
+
+
+{% highlight python %}
+>> docker run -it 
+	developmentseed/landsat-util:latest 
+	/bin/sh -c "landsat -h"
+{% endhighlight %}
+
+

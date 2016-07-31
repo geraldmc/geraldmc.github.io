@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Luigi In Orbit
+title: Luigi In Orbit, Part I
 #published: false
 #categories: ['luigi', 'data engineering']
 #tags: ['luigi', 'data engineering']
 
 ---
 
-Here I'll describe an example of how Luigi can be used to orchestrate a more complex set of tasks. In this case a Luigi pipeline helps to coordinate the periodic search and retrieval of [LANSAT 8](http://landsat.usgs.gov/landsat8.php) image data. It then prepares that data for upload onto`S3`, runs some [scikit-image](http://scikit-image.org/) and [scikit-learn](http://scikit-image.org/) analytics on it, and finally dumps the output so that an API endpoint can serve up the result (through a custom [Flask](https://www.youtube.com/watch?v=px_vg9Far1Y) web app).  I don't expect readers to understand how all these separate technologies work. *How Luigi glues them together is the point*. Primarily, I hope to demonstrate that a tool like Luigi can help shield the data engineer from knowing each and every detail regarding how a  pipeline actually functions. Before we open up the hood some background is in order.
+Here I'll lay the groundwork for a series of posts that will detail how Luigi can be used to orchestrate a more complex set of tasks. In this case a Luigi pipeline helps coordinate the periodic search and retrieval of [LANSAT 8](http://landsat.usgs.gov/landsat8.php) image data. It then prepares that data for upload onto`S3`, runs [scikit-image](http://scikit-image.org/) and [scikit-learn](http://scikit-image.org/) analytics on it, and finally dumps the output so that an API endpoint can serve up the result (through a custom [Flask](https://www.youtube.com/watch?v=px_vg9Far1Y) web app).  I don't expect readers to understand how all these separate technologies work. *How Luigi glues them together is the point*. Primarily, I hope to demonstrate that a tool like Luigi can help shield the data engineer from knowing each and every detail regarding how a  pipeline actually functions. Before we open up the hood some background is in order.
 
 ---
 
@@ -115,7 +115,7 @@ We've searched Landsat for imagery taken between July 3 and July 10, roughly cen
   --ndvi
 {% endhighlight %}
 
-The above command packs a tremendous punch into a simple statement. Up to now I've said nothing about how to actually set-up and run landsat-util. Running it requires an amount of supporting infrastructure, for now I'll issue a promissary note and suggest only that to get the tool up and running, [Docker](https://www.docker.com/) is your friend. 
+The above command packs a tremendous punch in a single statement. Up to now I've said nothing about the requirements to run landsat-util. Landsat-util requires some amount of infrastructure and there are performance issues (especially on a mac) but for now I'm issuing a promissary note with the suggestion that to get easily get the tool running, [Docker](https://www.docker.com/) is your friend. 
 
 
 <!-- [Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery. -->
