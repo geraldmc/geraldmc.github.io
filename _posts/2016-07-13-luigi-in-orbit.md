@@ -115,7 +115,7 @@ We've searched Landsat for imagery taken between July 3 and July 10, roughly cen
   --ndvi
 {% endhighlight %}
 
-The above command packs a tremendous punch into a simple statement. Up to now I've said nothing about how to actually set-up and run landsat-util. Running it requires an amount of supporting infrastructure, for now I'll issue a promissary note and suggest only that to get the tool up and running, Docker is your friend. 
+The above command packs a tremendous punch into a simple statement. Up to now I've said nothing about how to actually set-up and run landsat-util. Running it requires an amount of supporting infrastructure, for now I'll issue a promissary note and suggest only that to get the tool up and running, [Docker](https://www.docker.com/) is your friend. 
 
 
 <!-- [Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery. -->
