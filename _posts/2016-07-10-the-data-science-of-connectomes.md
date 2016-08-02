@@ -23,7 +23,7 @@ Mapping networks at the level of connections got its start way back in the 70s w
 
 ![C.Elegans]({{ site.url }}/assets/CrawlingCelegans.gif) [![C.Elegans]({{ site.url }}/assets/by-sa.png){:height="15px" width="45px"}](http://labs.bio.unc.edu/Goldstein/movies.html)
 
-_Caenorhabditis elegans_ is a nematode roundworm, generally slender and circular in cross section. It is non-pathogenic and grows to about 1 mm in length. While C. elegans is about as primitive an organism as can be, it shares many essential characteristics relevant to the study of human biology, in particular to human neurobiology.
+_Caenorhabditis elegans_ is a nematode roundworm, generally slender and circular in cross section. It is non-pathogenic and grows to about 1 mm in length. While _C. elegans_ is about as primitive an organism as can be, it shares many essential characteristics relevant to the study of human biology, in particular to human neurobiology.
 
 By far the most complex organ in _C. elegans_ is its nervous system. Of a total of 959 cells, 301 in _C. elegans_ are neuronal. 20 of these are located in the organism's pharynx (which has its own nervous system). The remaining 281 make up its various head and tail ganglia along with additional ganglia running along its main longitudinal axis.
 
