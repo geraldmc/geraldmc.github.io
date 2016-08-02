@@ -103,10 +103,9 @@ The output of above is a JSON response which can be stored as `out.json` on the 
 
 <script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
 
-
 The result is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover occurred are captured. This filtering step is important for later in the processing chain.  
 
-We've searched Landsat for imagery taken between July 3 and July 10, roughly centered on New Orleans, and filtered the result for cloud cover. After storing these locally we can begin the next phase. 
+We've searched Landsat for imagery taken between July 3 and July 10, roughly centered on New Orleans, and filtered the result for cloud cover. The next step is to download the filtered images and process them. Landsat 8 imagery acquired before 2015 is downloaded from Google Earth Engine while anything afterwards comes from AWS Public Data Sets. Here I am asking for a specific sceneID (returned as the result of the previous search) and requesting bands 3, 4 and 5.
 
 {% highlight python %}
 >> landsat download 
@@ -115,7 +114,9 @@ We've searched Landsat for imagery taken between July 3 and July 10, roughly cen
   --ndvi
 {% endhighlight %}
 
-The above command packs a tremendous punch in a single statement. Up to now I've said nothing about the requirements to run landsat-util. Landsat-util requires some amount of infrastructure and there are performance issues (especially on a mac) but for now I'm issuing a promissary note with the suggestion that to get easily get the tool running, [Docker](https://www.docker.com/) is your friend. 
+The above command packs a tremendous punch in a single statement.
+
+I've said nothing about the supporting software required to run landsat-util. The tool requires some amount of infrastructure and there may be performance and dependency issues when running it locally. For now I'll issue a promissary note with the suggestion that to more easily get landsat-util up and running, [Docker](https://www.docker.com/) is your friend. 
 
 
 <!-- [Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery. -->

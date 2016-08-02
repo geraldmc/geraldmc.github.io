@@ -54,7 +54,7 @@ One misconception about Docker is a by-product of its current focus on microserv
 
 ---
 
-### Return to orbit
+### Returning to orbit
 
 Assuming that you've downloaded and installed Docker, here's an easy way to get landsat-util running locally on your machine.
 

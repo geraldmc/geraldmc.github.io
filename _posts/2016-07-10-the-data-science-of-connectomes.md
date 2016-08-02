@@ -63,7 +63,7 @@ A quick plot reveals that some nodes are more highly connected than others. Bear
 
 Finally, we can use [ggnet()](https://github.com/briatte/ggnet) to hone in a bit on the degree of connectivity. The ggnet and ggnet2 packages allow us to visualize networks as [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html) objects.
 
-![Figure 2]({{ site.url }}/assets/fig3.png){:height="430px" width="500px"}
+![Figure 2]({{ site.url }}/assets/fig3.png){:height="330px" width="420px"}
 
 
 ---
