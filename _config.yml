@@ -7,7 +7,7 @@ permalink:           pretty
 title:               'terr&eacute; bon'
 tagline:             ' / the good earth'
 description:         'Technology promises abundance but has left us in want. More than technology <a href="https://youtu.be/V1fMvLbE85E" target="_blank">we need humanity</a>. More than cleverness, we need kindness and gentleness. Without these our lives are empty.'
-#url:                 https://geraldmc.github.io/
+url:                 https://geraldmc.github.io/
 baseurl:             ''
 paginate:            5
 
@@ -20,14 +20,20 @@ author:
 # Github
 #github:
   repo:           https://github.com/geraldmc/
-#  feedback:       https://github.com/geraldmc/feedback/issues/new
 
 # Custom vars
 version:             0.0.1
 timezone:            'America/Chicago'
 show_drafts:         False
 
-# Handling Reading
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
 safe:         false
 include:      [".htaccess"]
 exclude:      []

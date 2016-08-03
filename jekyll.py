@@ -29,4 +29,4 @@ c.MarkdownExporter.filters = {'path2support': path2support}
 
 if f:
     c.NbConvertApp.output_base = f.lower().replace(' ', '-')
-    c.FilesWriter.build_directory = '/Users/geraldmc/Code2016/jekyll/terrebon/_notebooks' # point this to your build directory
+    c.FilesWriter.build_directory = '/Users/geraldmc/Code2016/repos/geraldmc.github.io/_notebooks'
