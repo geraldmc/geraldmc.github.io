@@ -2,6 +2,7 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
+relative_permalinks: false
 
 # Setup
 title:               'terr&eacute; bon'
@@ -10,6 +11,8 @@ description:         'Technology promises abundance but has left us in want. Mor
 url:                 https://geraldmc.github.io/
 baseurl:             ''
 paginate:            5
+exclude:             [CNAME, Gemfile, README.md, LICENSE.md, scratch.md]
+
 
 # About/contact
 author:
@@ -41,5 +44,8 @@ keep_files:   [".git"]
 encoding:     "utf-8"
 markdown:     kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+license:             CC BY 4.0
+license_url:         http://creativecommons.org/licenses/by/4.0/legalcode
 
 
