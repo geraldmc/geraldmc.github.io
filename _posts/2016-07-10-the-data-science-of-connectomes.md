@@ -15,7 +15,7 @@ This is a cube of copper pennies 2,730 feet long on each side. The smaller cube 
 
 Current estimates of brain connectivity often fail to take into account the brain's mercurial makeup. The brain possesses an extraordinary ability to modify its own structure and function in response to change, both as the result of external events and in accordance with the organism's innate developmental blueprint. 
 
-Mapping networks at the level of connections got its start way back in the 70s with the study of the roundworm`C.Elegans`. More recently the field of connectomics has seen rapid rise in part due to computational advances that allow for the semi-automated collection and analysis of previously unheard of volumes of data. Here I describe some of the challenges that arise when managing and modeling connectome data.
+Mapping networks at the level of connections got its start way back in the 70s with the study of the roundworm`C. elegans`. More recently the field of connectomics has seen rapid rise in part due to computational advances that allow for the semi-automated collection and analysis of previously unheard of volumes of data. Here I describe some of the challenges that arise when managing and modeling connectome data.
 
 ---
 

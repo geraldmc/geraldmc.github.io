@@ -56,12 +56,13 @@ One misconception about Docker is a by-product of its current focus on microserv
 
 ### Returning to orbit
 
-Assuming that you've downloaded and installed Docker, here's an easy way to get landsat-util running locally on your machine.
+Assuming that you've downloaded and installed Docker, here's an easy way to get landsat-util running locally.
 
 {% highlight python %}
 >> docker pull developmentseed/landsat-util
 {% endhighlight %}
 
+Test to see that our Docker image executes as expected. The following should print out landsat-util's help menu.
 
 {% highlight python %}
 >> docker run -it 
@@ -69,4 +70,17 @@ Assuming that you've downloaded and installed Docker, here's an easy way to get 
 	/bin/sh -c "landsat -h"
 {% endhighlight %}
 
+Finally, we can execute the same search as above:
 
+{% highlight python %}
+>> docker run -it 
+	developmentseed/landsat-util:latest 
+	/bin/sh -c 
+	" landsat search 
+	--start 07/03/2016 
+	--end 07/10/2016 
+	--lat 29.909273 
+	--lon -90.920771 "
+{% endhighlight %}
+
+---
