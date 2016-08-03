@@ -1,3 +1,8 @@
+---
+layout: post
+title: Simple Luigi
+---
+
 Recently, I've been using [Luigi](https://pypi.python.org/pypi/luigi/2.2.0) (created at [Spotify](https://en.wikipedia.org/wiki/Spotify)) for job scheduling and orchestration.  Luigi is a framework for writing data pipelines that can be described as a `workflow manager` similar in respects to [oozie](http://oozie.apache.org/) or [drake](https://github.com/Factual/drake).   
 
 Instead of the familiar XML or yaml configurations, Luigi lets you create a Python object that defines a dependency graph, where dependencies can trigger other dependencies and so forth. This sounds like `make` on the surface, but Luigi goes deeper.
