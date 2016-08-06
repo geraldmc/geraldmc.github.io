@@ -78,7 +78,7 @@ Landsat 8 operates in the visible, near-infrared, short wave infrared, and therm
   </tbody>
 </table>
 
-Panchromatic is the combination of all human-visible wavelengths of the spectrum (i.e. RGB). The SI unit of irradiance is the watt per square metre (W/m2). 
+Panchromatic is the combination of all human-visible wavelengths of the spectrum. While containing all wavelengths normally associated with familiar RGB photography, an image from the `pan band` is more similar to black-and-white film combining light from the visible parts of the spectrum into a single measure of overall reflectance. The SI unit of irradiance is the watt per square metre (W/m2). 
 
 ---
 
