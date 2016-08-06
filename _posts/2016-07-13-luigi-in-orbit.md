@@ -111,10 +111,7 @@ We've searched Landsat for imagery taken between July 3 and July 10, roughly cen
 >> landsat download 
   LC80220402016185LGN00 
   --bands 345
-  --ndvi
 {% endhighlight %}
-
-The above command packs a tremendous punch in a single statement.
 
 I've said nothing about the supporting software required to run landsat-util. The tool requires some amount of infrastructure and there may be performance and dependency issues when running it locally. For now I'll issue a promissary note with the suggestion that to more easily get landsat-util up and running, [Docker](https://www.docker.com/) is your friend. 
 
