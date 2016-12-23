@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Luigi In Orbit, I
+title: Luigi In Orbit
 #published: false
 #categories: ['luigi', 'data engineering']
 #tags: ['luigi', 'data engineering']
@@ -78,7 +78,7 @@ Landsat 8 operates in the visible, near-infrared, short wave infrared, and therm
   </tbody>
 </table>
 
-Panchromatic is the combination of all human-visible wavelengths of the spectrum. While containing all wavelengths normally associated with familiar RGB photography, an image from the `pan band` is more similar to black-and-white film combining light from the visible parts of the spectrum into a single measure of overall reflectance. The SI unit of irradiance is the watt per square metre (W/m2). 
+Panchromatic is the combination of all human-visible wavelengths. While containing wavelengths normally associated with familiar RGB photography, an image from the `pan band` is more similar to black-and-white film in the way it combines light from the visible spectrum into a single measure of overall reflectance. The SI unit of irradiance is the watt per square metre (W/m2). 
 
 ---
 
@@ -100,7 +100,6 @@ Here is an example of searching with landsat-util:
 
 The output of above is a JSON response which can be stored as `out.json` on the local file system. Next we parse the file and pull out those elements that are of interest. 
 
-
 <script src="https://gist.github.com/geraldmc/71606541f4e2983d562d353321080a13.js"></script>
 
 The result is a list of `(date, sceneID)` tuples filtered such that only dates where less than 20% cloud cover occurred are captured. This filtering step is important for later in the processing chain.  
@@ -113,7 +112,7 @@ We've searched Landsat for imagery taken between July 3 and July 10, roughly cen
   --bands 345
 {% endhighlight %}
 
-I've said nothing about the supporting software required to run landsat-util. The tool requires some amount of infrastructure and there may be performance and dependency issues when running it locally. For now I'll issue a promissary note with the suggestion that to more easily get landsat-util up and running, [Docker](https://www.docker.com/) is your friend. 
+I've said nothing about the supporting software required to run landsat-util. The tool requires some amount of infrastructure and there may be performance and dependency issues when running locally. For now I'll issue a promissary note with the suggestion that to more easily get landsat-util up and running, [Docker](https://www.docker.com/) is your friend. 
 
 
 <!-- [Libra](https://libra.developmentseed.org/) is a browser for open Landsat 8 data that may also be used to browse, filter, sort, and download satellite imagery. -->

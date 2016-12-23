@@ -59,6 +59,6 @@ Scheduled 3 tasks of which:
 
 Ok, but we haven't actually done anything. 
 
-Imagine a task that runs periodically and requires some form of pre-processing from a script located on a local file system combined with data from a public resource. To provide a working example, the following post describes a workflow that initiates a search query, downloads and analyzes Landsat 8 data, determines whether or not such data should be filtered prior to processing. While none these steps are actually performed by Luigi, all are coordinated and thereby made more repeatable (thus more managable) by it.  
+Imagine a task that needs to be run periodically and requires pre-processing from a script located on a local file system combined with data from a public resource. To provide a working example, the following series of posts will describe a workflow that initiates a search query, downloads and analyzes Landsat 8 data, determines whether or not such data should be filtered prior to processing then processes it. While none these steps is actually performed by Luigi, all are coordinated and thereby made more repeatable (thus more managable) because of it.  
 
 <br>
