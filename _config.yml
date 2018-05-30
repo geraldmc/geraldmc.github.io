@@ -7,7 +7,7 @@ relative_permalinks: false
 # Setup
 title:               'terr&eacute; bon'
 tagline:             ' / the good earth'
-description:         'Technology promises abundance but has left us in want. More than technology <a href="https://bit.ly/2rx0407">we need humanity</a>. More than cleverness we need compassion.'
+description:         'Technology promises abundance but leaves us wanting. More than technology <a href="https://bit.ly/2rx0407">we need humanity</a>. More than cleverness we need compassion.'
 url:                 https://geraldmc.github.io/
 baseurl:             ''
 paginate:            5
