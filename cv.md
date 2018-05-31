@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Résumé
+title: One-Page Résumé
 ---
 
 ---
