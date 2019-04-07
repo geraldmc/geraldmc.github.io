@@ -1,19 +1,21 @@
 ---
 layout: post
-title: Predicting Crop Yield with Pictures?
+title: Predicting Crop Yields?
 ---
 
 ### Background
 
-First introduced into Louisiana in 1751, sugarcane (*Saccharum officinarum*) is the highest valued row-crop in the state. While recent decades have seen a drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in sucrose yield. Significant increases in yield are mainly attributable to the addition of nitrogen (N) fertilizer.
+First introduced into Louisiana in 1751, sugarcane (*Saccharum officinarum*) is the highest valued row-crop in the state. While recent decades have seen a drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in sucrose yield. Significant increases in yield are attributable mainly to the addition of nitrogen (N) fertilizer.
+
+
 
 ### Introduction
 
-What follows are results from a two-year USDA funded study that considers the use of low-cost vegetation indices such as aerial NDVI as a potential addition to a sugar cane farmer's overall N management strategy. The Normative Difference Vegetation Index (NDVI) is a form of hyper-spectral imaging that collects and processes information across various wavelengths of the electromagnetic spectrum. In agriculture, the goal of NDVI imaging is to detect the relative strength of photosynthetic processes occurring in the field. While vegetation indices like NDVI have been applied in agriculture, the primary disadvantage of these methods has traditionally been their cost and complexity.
+What follows are results from a two-year USDA funded study that considered use of low-cost vegetation indices such as aerial NDVI as a potential addition to a sugar cane farmer's overall N management strategy. The Normative Difference Vegetation Index (NDVI) is a form of hyper-spectral imaging that collects and processes information across various wavelengths of the electromagnetic spectrum. In agriculture, the goal of NDVI imaging is to detect the relative strength of photosynthetic processes occurring in the field. While vegetation indices like NDVI have been applied in agriculture, the primary disadvantage of these methods has been their cost and relative complexity.
 
  
-### Study Goals
-Our primary goal is the study was to determine to what extent low-cost aerial NDVI might be correlated with variable N rates applied to sugarcane. A secondary goal was to determine to what extent time-series analysis of low-cost NDVI imagery might be used to predict yield potential in sugarcane.
+### Goals
+Our primary goal was to determine to what extent low-cost aerial NDVI can be correlated with variable N rates applied to sugarcane. A secondary goal was to determine to what extent time-series analysis of low-cost NDVI imagery might be used to predict yield potential in sugarcane.
 
 We asked two questions:
 
@@ -21,6 +23,10 @@ We asked two questions:
 
 * Are models of acquired multi-spectral imagery predictive of sugarcane yield?
 
-This was our study area:
+Our study area was planted and harvested over two successive growing seasons. An area of 1000 by 60 ft was divided in a Latin Square design into 30 sections, each 20 by 100 ft in length. 
 
 ![South Louisiana]({{ site.url }}/assets/study-area.png){:height="250px" width="850px"} 
+
+
+
+
