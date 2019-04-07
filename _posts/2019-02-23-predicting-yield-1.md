@@ -23,10 +23,10 @@ We asked two questions:
 
 * Are models of acquired multi-spectral imagery predictive of sugarcane yield?
 
-Our study area was planted and harvested over two successive growing seasons. An area of 1000 by 60 ft was divided in a Latin Square design into 30 sections, each 20 by 100 ft in length. 
+Our study area was planted and harvested over two successive growing seasons. An area of 1000 by 60 ft was divided in a Latin Square design into 30 sections.
 
 ![South Louisiana]({{ site.url }}/assets/study-area.png){:height="250px" width="850px"} 
 
+As indicated in the image below five levels of nitrogen fertilization (0, 40, 80, 120 and 180 kg·N·ac−1) were applied in a setup with six replicates. This resulted in 30 plots of size 100 × 20 sq ft each making a total trial size of 1.5 acres.
 
-
-
+![South Louisiana]({{ site.url }}/assets/treatment-grid.png){:height="250px" width="850px"} 
