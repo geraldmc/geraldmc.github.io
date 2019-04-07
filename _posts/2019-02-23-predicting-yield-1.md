@@ -17,10 +17,10 @@ Our primary goal is the study was to determine to what extent low-cost aerial ND
 
 We asked two questions:
 
-    * Can variable nitrogen rates applied to sugarcane be correlated with low-cost multi-spectral imagery?
+* Can variable nitrogen rates applied to sugarcane be correlated with low-cost multi-spectral imagery?
 
-    * Are models of acquired multi-spectral imagery predictive of sugarcane yield?
+* Are models of acquired multi-spectral imagery predictive of sugarcane yield?
 
 This was our study area:
 
-![South Louisiana]({{ site.url }}/assets/study-area.png){:height="300px" width="800px"} 
+![South Louisiana]({{ site.url }}/assets/study-area.png){:height="275px" width="800px"} 
