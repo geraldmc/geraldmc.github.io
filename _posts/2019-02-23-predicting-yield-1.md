@@ -1,4 +1,4 @@
 ---
 layout: post
-title: Predicting Yield with an Image?
+title: Predicting Crop Yield with Images?
 ---
