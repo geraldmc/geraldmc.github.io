@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predicting Crop Yields?
+title: Predicting Crop Yields - Part I
 ---
 
 ### Setup
@@ -9,13 +9,12 @@ Here are a series of posts documenting experiences with USDA-SARE grant ...
 
 ### Background
 
-First introduced into Louisiana in 1751, sugarcane (*Saccharum officinarum*) is the highest valued row-crop in the state. While recent decades have seen a drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in sucrose yield. Significant increases in yield are attributable mainly to the addition of nitrogen (N) fertilizer.
-
+Introduced into Louisiana in 1751, sugarcane (*Saccharum officinarum*) is the highest valued row-crop in the state. While recent decades have seen a drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in sucrose yield. Significant increases in yield are attributable mainly to the addition of nitrogen (N) fertilizer. How do we manage nitrogen application in sugarcane that is both 
 
 
 ### Introduction
 
-What follows are results from a two-year USDA funded study that considered use of low-cost vegetation indices such as aerial NDVI as a potential addition to a sugar cane farmer's overall N management strategy. The Normative Difference Vegetation Index (NDVI) is a form of hyper-spectral imaging that collects and processes information across various wavelengths of the electromagnetic spectrum. In agriculture, the goal of NDVI imaging is to detect the relative strength of photosynthetic processes occurring in the field. While vegetation indices like NDVI have been applied in agriculture, the primary disadvantage of these methods has been their cost and relative complexity.
+What follows are results from a two-year USDA study that considered how low-cost vegetation indices such as aerial NDVI might serve as a powerful addition to a sugar cane farmer's overall N management strategy. The Normative Difference Vegetation Index (NDVI) is a form of hyper-spectral imaging that collects and processes information across various wavelengths of the electromagnetic spectrum. In agriculture, the goal of NDVI imaging is to detect the relative strength of photosynthetic processes occurring in the field. While vegetation indices like NDVI have been applied in agriculture, the primary disadvantage of these methods has been their cost and relative complexity.
 
  
 ### Goals
