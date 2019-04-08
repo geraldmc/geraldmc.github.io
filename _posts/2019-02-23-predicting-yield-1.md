@@ -3,6 +3,10 @@ layout: post
 title: Predicting Crop Yields?
 ---
 
+### Setup
+
+Here are a series of posts documenting experiences with USDA-SARE grant ... 
+
 ### Background
 
 First introduced into Louisiana in 1751, sugarcane (*Saccharum officinarum*) is the highest valued row-crop in the state. While recent decades have seen a drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in sucrose yield. Significant increases in yield are attributable mainly to the addition of nitrogen (N) fertilizer.
