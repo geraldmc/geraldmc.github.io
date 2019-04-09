@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Predicting Crop Yields - Part I
+title: Predicting Crop Yield - Part I
 ---
 
 ![Treatments]({{ site.url }}/assets/sugar_cane.png){:height="200px" width="200px"} 
 
 ### Introduction
 
-Here are a series of posts documenting my experiences directing a two-year USDA study which considered how low-cost vegetation indices such as NDVI might serve as useful additions to a sugarcane farmer's overall nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers while the 'where and when' of nitrogen application remains a guessing game; 2) excessive reactive nitrogen in the environment alters local and global ecosystems and can potentially harm human health. Thus, learning to better manage N application is an important concern motivated by the economics of sugarcane farming as much as by the need to address an environmental issue.  
+Here I'm sharing a series of posts that document my experience managing a two-year USDA grant study. This project considered how low-cost vegetation indices such as NDVI might be useful additions to a sugarcane farmer's overall nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers while the 'where and when' of nitrogen application largely remains a guessing game; 2) excessive reactive nitrogen in the environment alters local and global ecosystems and can potentially harm human health. Thus, learning to better manage N application is an important concern motivated by the economics of sugarcane agriculture as much as by the need to address an environmental issue.  
 
 ### Background
 
@@ -33,13 +33,12 @@ As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-![NGR Highlight]({{ site.url }}/assets/NGR-highlight.png){:height="225px" width="325px"} 
+![NGR Highlight]({{ site.url }}/assets/NGR-highlight-caption.png){:height="225px" width="325px"} 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
-
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
