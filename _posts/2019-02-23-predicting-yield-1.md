@@ -3,9 +3,11 @@ layout: post
 title: Predicting Crop Yields - Part I
 ---
 
+![Treatments]({{ site.url }}/assets/sugar_cane.png){:height="200px" width="850px"} 
+
 ### Introduction
 
-Here are a series of posts documenting my experiences running a two-year USDA grant which considered how low-cost vegetation indices such as NDVI might serve as a useful addition to a sugarcane farmer's overall nitrogen (N) management strategy. The study was motivated by two key concerns: 1) yearly nitrogen input represents a significant cost to farmers while the 'where and the when' of nitrogen application remains largely a guessing game; and 2) excessive reactive nitrogen in the environment negatively alters local and global ecosystems and potentially harms human health. Thus our learning to better manage N application is motivated by the economics of sugarcane farming as well as by the need to address environmental issues. 
+Here are a series of posts documenting my experiences running a two-year USDA grant which considered how low-cost vegetation indices such as NDVI might serve as a useful addition to a sugarcane farmer's overall nitrogen management strategy. This study was motivated by two concerns: 1) yearly nitrogen input represents a significant cost to farmers while the 'where and when' of nitrogen application remains a guessing game; 2) excessive reactive nitrogen in the environment alters local and global ecosystems and can potentially harm human health. Thus, learning to better manage N application is an important concern motivated by the economics of sugarcane farming as much as by the need to address an acute environmental issue.  
 
 ### Background
 
