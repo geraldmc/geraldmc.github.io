@@ -3,28 +3,23 @@ layout: post
 title: Predicting Crop Yields - Part I
 ---
 
-### Setup
+### Introduction
 
-Here are a series of posts documenting experiences with USDA-SARE grant ... 
+Here are a series of posts documenting my experiences running a two-year USDA grant which considered how low-cost vegetation indices such as NDVI might serve as a useful addition to a sugarcane farmer's overall nitrogen (N) management strategy. The study was motivated by two key concerns: 1) yearly nitrogen input represents a significant cost to farmers while the 'where and the when' of nitrogen application remains largely a guessing game; and 2) excessive reactive nitrogen in the environment negatively alters local and global ecosystems and potentially harms human health. Learning to better manage N application is motivated both by the economics of sugarcane farming as well as by the need to address environmental issues. 
 
 ### Background
 
-Introduced into Louisiana in 1751, sugarcane (*Saccharum officinarum*) is the highest valued row-crop in the state. While recent decades have seen a drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in sucrose yield. Significant increases in yield are attributable mainly to the addition of nitrogen (N) fertilizer. How do we manage nitrogen application in sugarcane that is both 
-
-
-### Introduction
-
-What follows are results from a two-year USDA study that considered how low-cost vegetation indices such as aerial NDVI might serve as a powerful addition to a sugar cane farmer's overall N management strategy. The Normative Difference Vegetation Index (NDVI) is a form of hyper-spectral imaging that collects and processes information across various wavelengths of the electromagnetic spectrum. In agriculture, the goal of NDVI imaging is to detect the relative strength of photosynthetic processes occurring in the field. While vegetation indices like NDVI have been applied in agriculture, the primary disadvantage of these methods has been their cost and relative complexity.
-
+Our study crop was sugarcane (*Saccharum officinarum*). First introduced into Louisiana in 1751, it is the highest valued row-crop in the state. While recent decades have witnessed a drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in yield. Increased sucrose yields are attributable to the addition of nitrogen fertilizer. Thus how do we manage nitrogen application in sugarcane is relevant both farmers and to everyone else. 
  
 ### Goals
-Our primary goal was to determine to what extent low-cost aerial NDVI can be correlated with variable N rates applied to sugarcane. A secondary goal was to determine to what extent time-series analysis of low-cost NDVI imagery might be used to predict yield potential in sugarcane.
+Our primary goal was to determine to what extent low-cost aerial NDVI and other vegetation indices might correlate with variable N rates when applied to sugarcane. A secondary goal was to determine to what extent our analysis of low-cost NDVI and related indices might be useful for predicting the yield potential in a future sugarcane crop.
 
 We asked two questions:
 
 * Can variable nitrogen rates applied to sugarcane be correlated with low-cost multi-spectral imagery?
 
 * Are models of acquired multi-spectral imagery predictive of sugarcane yield?
+
 
 Our study area was planted and harvested over two successive growing seasons. An area of 1000 by 60 ft was divided in a Latin Square design into 30 sections.
 
