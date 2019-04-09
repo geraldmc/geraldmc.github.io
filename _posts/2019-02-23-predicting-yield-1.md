@@ -11,7 +11,7 @@ Here are a series of posts documenting my experiences directing a two-year USDA 
 
 ### Background
 
-Our study crop was sugarcane (*Saccharum officinarum*). First introduced into Louisiana in 1751 by the Jesuits, it is the highest valued row-crop in the state. While recent decades have witnessed a overall drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in yield. Increased sucrose yield is attributable mainly to the addition of nitrogen fertilizer. Thus, how we manage nitrogen application is relevant both to sugarcane farmers and to everyone else. 
+Our study crop was sugarcane (*Saccharum officinarum*). First introduced into Louisiana in 1751, it is the highest valued row-crop in the state. While recent decades have witnessed a overall drop in Louisiana sugarcane acreage, crop values have remained stable due to increases in yield. Increased sucrose yield is attributable mainly to the addition of nitrogen fertilizer. Thus, how we manage nitrogen application is relevant both to sugarcane farmers and to everyone else. 
  
 ### Goals
 Our primary goal was to determine to what extent low-cost aerial NDVI and other vegetation indices might correlate with variable N rates applied to sugarcane. A secondary goal was to determine if our analysis might be useful in predicting the yield potential of a future sugarcane crop.
@@ -33,15 +33,11 @@ As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-![Nadir View]({{ site.url }}/assets/nadir-view.png){:height="200px" width="850px"} 
+![NGR Highlight]({{ site.url }}/assets/NGR-highlight.png){:height="225px" width="325px"} 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-![NGR Highlight]({{ site.url }}/assets/NGR-highlight.png){:height="225px" width="400px"} 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<!-- {% highlight python %} fofofo {% endhighlight %} -->
+<!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 
 
