@@ -7,7 +7,7 @@ relative_permalinks: false
 # Setup
 title:               'terr&eacute; bon'
 tagline:             ' / the good earth'
-description:         'I am a data-lover with a thought to share. While technology promises abundance it leaves us wanting. More than technology <a href="https://bit.ly/2rx0407">we need compassion</a>.'
+description:         'I am a data-lover with a funny thought to share: while technology promises abundance it leaves us wanting. More than technology <a href="https://bit.ly/2rx0407">we need compassion</a>.'
 url:                 https://geraldmc.github.io/
 baseurl:             ''
 paginate:            5
