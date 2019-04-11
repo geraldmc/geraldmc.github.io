@@ -45,14 +45,16 @@ The image above shows a composite NRG taken a clear day in late April, 2018. It'
 ![NGR Highlight]({{ site.url }}/assets/map-stitch.gif){:height="275px" width="425px"}
 <br />  
 
-While the work of this grant involved long days spent in a cane field gathering data it also required time in front of a computer to make sense of it all. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline that was developed to automate the work.  
-<br /> 
+While the work of this grant involved long days spent in a cane field gathering data it also required time in front of a computer to make sense of it all. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline that was developed to automate the work.
+
+The process of stitching together many hundreds of smaller images, separating the individual bands and running simple computational methods over them results in an image of the full study area. The image below (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG index, at the height of the growing season. It was plenty hot that day! 
+
 <!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
+
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 <br />  
-The final result of stitching together many hundreds of smaller images, separating the individual bands and processing these in terms of simple statistical methods resulted in an initial image of the full study area. The image below shows the grid of test plots as an NRG vegetation index acquired on July 28th, 2017, at the height of the growing season. It was plenty hot that day! 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
