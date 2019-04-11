@@ -56,18 +56,12 @@ The process of stitching together many hundreds of smaller images, separating th
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
-Two things to notice: my car appears twice in the image above - once in the upper-left and again at the far-right. Because the area was too long (1200ft) to be covered in a single flight it had to be flown twice each capture - once for the left half and once for the right. I would set up on one side, fly the mission over half the field, then pack everything up and drive to the other side. Consumer drones use up their batteries way too fast!
+Two things to notice: my car appears twice in the image above - once in the upper-left and again at the far-right. Because the area was too long (1200ft) to be covered in a single flight it had to be flown twice each capture - once for the left half and once for the right. I would set up on one side, fly the mission over half the field, then pack up everything and drive to the other side. Consumer drones use up their batteries way too fast!
 
-A more interesting thing to see are different shades of red in different parts of the grid. Earlier I mentioned how we treated separate sections of the study area (each about 100 ft by 20 ft, where a single row is roughly 6 feet wide) with a different amount of N fertilizer. The different shades of red signify different intensities of near-infrared light being reflected from that section. The treatment for 120 kg·N·ac−1 (#4 in the colored grid at the start of this post) appears in a certain pattern and that pattern is visible in this image. It reveals that differing amounts of nitrogen fertilizer applied to different sections are visibly discernable in terms of the NIR light they reflect. In the next post I'll explain why that matters.    
+A more interesting thing revealed by the image are the different shades of red in different parts of the grid. Earlier I mentioned how we treated separate sections of the area (each about 100 ft by 20 ft, where a single row is roughly 6 feet wide) with a different amount of N fertilizer. The shades of red signify different intensities of near-infrared light being reflected from each section. The treatment for 120 kg·N·ac−1 (#4 in the colored grid at the start of this post) appears as a certain pattern and that pattern is visible here. This image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the NIR light they reflect. In the next post I'll explain why that matters.    
 
 <br />  
 ![CIR Section 001]({{ site.url }}/assets/2017-04-25_001_3_CIR.png){:height="50px" width="200px"} 
 <br />  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor    e magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<br />  
-![NDVI Section 001]({{ site.url }}/assets/2017-04-25_001_3_NDVI.png){:height="200px" width="850px"} 
-<br />  
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Before moving on to the next section I'll show an image of a single treated section (above). After going to the trouble of stitching and 'rectifying' hundreds of separate images we had to cut them up again very precisely into samples. The image above is one sample of one treatment gathered on one day over the entire growing season from April to November.
