@@ -52,12 +52,13 @@ While the work of this grant involved long days spent in a cane field gathering 
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
 
-The process of stitching together many hundreds of smaller images, separating the individual bands and running simple computational methods over them results in an image of the full study area. The image below (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG index, at the height of the growing season. It was plenty hot that day!
+The process of stitching together many hundreds of smaller images, separating the individual bands and running simple computational methods over them results in an image of the full study area (below). This image (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG index, at the height of the growing season. It was plenty hot that day!
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
-<br />  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Two things to notice: my car is viewed twice - once in the upper left and again in the middle right portion of the image. This is because the entire area had to be flown in two separate flights - one for the left half of the study area and one for the right (consumer drones use their battery power very quickly). I think the stitching here is pretty seamless! 
+
+The second thing to notice are the different shades of red in different parts of the grid. At the start of this post I mentioned how we treated separate sections of the study area of (about 100 ft by 20 ft each, where a single row of sugarcane is roughly 6 feet wide). The different shades of red signify different intensities of near-infrared light reflected from each section. If you look back at the start of this post you'll see the treatment (#4) for 120 kg·N·ac−1 (in the colored grid) appears in a certain pattern. That pattern is visible in this image. Can you find it?   
 
 <br />  
 ![CIR Section 001]({{ site.url }}/assets/2017-04-25_001_3_CIR.png){:height="50px" width="200px"} 
