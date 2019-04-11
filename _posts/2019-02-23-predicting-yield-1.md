@@ -34,20 +34,20 @@ As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180
 
 Creating a vegetation index requires first getting a camera into the air and as we progressed we used kites, then balloons and ultimately an unassisted aerial drone (UAV). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with the rigs needed to reproducibly fly them. Ultimately we got some help from the folks at Micasense and used their multi-spectral camera, the Sequoia:
 
-![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="325px" width="325px"}
+![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="225px"}
 
 The Sequoia camera is about the size of a GoPro. It’s lightweight enough to serve as payload on a consumer-style drone such as the one we selected (a 3DR Solo). Flying the camera over a field allowed us to collect light reflecting from the leaves of the field in a very specific way. As the image indicates the Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands. By manipulating these various bands we were able to create different kinds of vegetation index, one of which is known as an NRG index. While most of us are familiar with RGB images in an NRG image the RGB (Red-Green-Blue) colors are swapped out for a different set, NIR (Near-infrared), the Red and the Green.
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
-The image above shows a composite NRG taken from a height of about 325 ft on a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The two rectangles in yellow are two of our test plots. The green square highlights my white VW Jetta and me for scale. The image below (from 2016) show the result of stitching a dozen or so images from a balloon flight. We got better at this over time! 
+The image above shows a composite NRG taken from a height of about 325 ft on a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The two rectangles in yellow are test plots. The green square highlights my white Jetta and me for scale. The image below (from 2016) show the result of stitching a dozen or so images from a balloon flight. We got better at this over time! 
 
 ![NGR Highlight]({{ site.url }}/assets/map-stitch.gif){:height="275px" width="425px"}
 <br />  
 
-The work of this grant involved long hot days spent in a cane field gathering data but it also required time in front of computer to make sense of all that data. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is a small part of a larger image-processing pipeline that was developed to automate the work.  
+While the work of this grant involved long days spent in a cane field gathering data it also required time in front of a computer to make sense of it all. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is a small part of a larger image-processing pipeline that was developed to automate the work.  
 <br /> 
------ 
+-------- 
 <!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
