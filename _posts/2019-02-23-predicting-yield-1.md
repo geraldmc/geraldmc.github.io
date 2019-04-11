@@ -40,12 +40,12 @@ The Sequoia is about the size of a GoPro. It’s lightweight enough to serve as 
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
-The image above shows a composite NRG taken a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The two rectangles in yellow are test plots. The green square highlights my white Jetta and me. The image below (from 2016) show the result of stitching a dozen or so images from a balloon flight. We got better at it over time! 
+The image above shows a composite NRG taken on a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The two rectangles in yellow are test plots. The green square highlights my white Jetta and me. The image below (from 2016) show the result of stitching a dozen or so images from a balloon flight. We got better at it over time! 
 
 ![NGR Highlight]({{ site.url }}/assets/map-stitch.gif){:height="275px" width="425px"}
 <br />  
 
-While the work of this grant involved long days in the cane field gathering data it also required time in front of a computer to make sense of it. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline developed to automate the work.
+While the work of this grant involved long days in a cane field gathering data it also required time in front of a computer screen to make sense of it. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline developed to automate the work.
 <br />  
 
 <!-- {% highlight python %} {% endhighlight %} -->
