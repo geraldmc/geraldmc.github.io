@@ -52,11 +52,11 @@ While the work of this grant involved long days in the cane field gathering data
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
 
-The process of stitching together hundreds of small images, separating the individual bands and running simple computational methods results in an image of the full study area (below). This image (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG index, at the height of the growing season. I recall it was plenty hot that day!
+The process of stitching together hundreds of small images, separating the individual bands and running simple computational methods results in an image of the full study area (below). This image (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG index at the height of the growing season. I recall it was plenty hot that day!
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
-Two things to notice: my car appears twice in the image above - once in the upper-left and again at the far-right. Because the area was too long (1200ft) to be covered by a single flight it had to be flown twice for each capture - once for the left half and once for the right. I would set up on one side, fly the mission over half, then pack everything up and drive to the other side. Consumer drones drain batteries way too fast!
+Two things to notice: my car appears twice in the image - once in the upper-left and again at the far-right. Since the area was too long (1200ft) to be covered by a single flight it had to be flown twice for each capture - once for the left half and once for the right. I would set up one side, fly the mission over half, pack everything up and drive to the other side. Consumer drones drain batteries too fast!
 
 A more interesting thing revealed here are the shades of red in different parts of the grid. Earlier I mentioned how we treated separate sections of the area (each about 100 ft by 20 ft, where a single row is roughly 6 feet wide) with a different amount of N fertilizer. The shades of red signify different intensities of near-infrared light reflected from each section. The treatment for 120 kg·N·ac−1 (#4 in the colored grid at the start of this post) appears as a pattern and that pattern is visible here. The image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the NIR light they reflect. In the next post I'll explain why that matters.    
 
