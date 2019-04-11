@@ -35,9 +35,9 @@ Creating a vegetation index requires first getting a camera into the air and as 
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="325px" width="325px"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Sequoia camera is about the size of a GoPro. It’s small and lightweight enough to serve as payload on a consumer-style drone such as the type we selected for use (a 3DR Solo). Flying this camera over a sugarcane field allowed us to collect reflected light of a very specific kind. As the image indicates the Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands. By manipulating various bands of light we were able to create different kinds of vegetation index of which is known as an NRG index. The photographs that most of us are most familiar with are commonly referred to as RGB images. In an NRG image instead of RGB (Red-Green-Blue) these colors are swapped out for a different set of wavelength values (for NIR-Red-Green).     
 
-![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="250px" width="250px"}
+![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="250px" width="300px"}
 
 <!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
