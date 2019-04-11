@@ -64,4 +64,4 @@ A more interesting thing revealed by the image are the different shades of red i
 ![CIR Section 001]({{ site.url }}/assets/2017-04-25_001_3_CIR.png){:height="50px" width="200px"} 
 <br />  
 
-Before moving on to the next section I show an image of a single treated section (above). After going to the trouble of stitching and 'rectifying' hundreds of separate images into one large image we had to cut them up again very precisely into samples. The image above is one such sample of a treatment gathered on one day over the entire growing season (from late April to mid-November).
+Before moving on to the next part I show an image of a single treated section (above). After going to the trouble of stitching and 'rectifying' hundreds of separate images into one large image we had to cut them up again very precisely into samples. The image above is one such sample of a treatment gathered on one day over the entire growing season (from late April to mid-November).
