@@ -14,11 +14,11 @@ Here I'm sharing a series of posts that document my experience managing a two-ye
 Our crop is sugarcane (*Saccharum officinarum*). First introduced into Louisiana in 1751 it is the highest valued row-crop in the state. While recent decades have seen a decline in Louisiana sugarcane acreage, crop values have remained stable due to increases in yield. Increased sucrose yield is attributable mainly to the addition of nitrogen fertilizer. Thus, how we manage nitrogen application is relevant to sugarcane farmers (economics) and to everyone else (environment). 
  
 ### Goals
-Our primary goal was to determine whether low-cost aerial NDVI and related vegetation indices would correlate with variable N rates when applied to sugarcane. A secondary goal was to determine if such an analysis might be useful for predicting the yield potential of a future sugarcane crop.
+Our primary goal was to determine whether low-cost aerial NDVI and related vegetation indices could correlate with variable N rates when applied to sugarcane. A secondary goal was to determine if such an analysis might be useful for predicting the yield potential of a future crop.
 
 We asked two questions:
 
-* Can variable nitrogen rates be correlated by multi-spectral imagery?
+* Can variable nitrogen rates be correlated with multi-spectral imagery?
 
 * Are models of acquired multi-spectral imagery predictive of yield?
 
@@ -31,9 +31,9 @@ As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180
 
 ![Treatments]({{ site.url }}/assets/treatment-grid.png){:height="200px" width="850px"} 
 
-Our study goals 
+Creating a vegetation index first requires getting a camera into the air and we progressed our study involved kites, balloons and ultimately unassisted aerial drones (UAVs).   
 
-![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="225px" width="325px"} 
+![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="225px" width="325px"}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
