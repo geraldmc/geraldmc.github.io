@@ -62,6 +62,5 @@ A more interesting thing revealed here are the shades of red in different parts 
 
 <br />  
 ![CIR Section 001]({{ site.url }}/assets/2017-04-25_001_3_CIR.png){:height="50px" width="200px"} 
-<br />  
 
-Before moving on to the next post I show an image of a single treated section (above). After going to the trouble of stitching and 'rectifying' hundreds of images into one larger one we had to cut that up again very precisely into samples. The image above is a single sample of a treatment gathered on one specific day over the growing season (from late April to mid-November). Ultimately we captured a dozen complete and useable samples from this field spaced out as evenly as possible from one week prior to application of fertilizer to 4 days before the field was harvested.  
+Before moving on to the next post I show an image (above) of a single treated section. After going to the trouble of stitching and 'rectifying' hundreds of images into a larger one we had to cut that image up very precisely into samples. The section above represents a single treatment gathered on a specific day during the growing season (from late April to mid-November). Ultimately we captured more than a dozen useable samples per treatment from this field spaced out as evenly as possible from one week prior to application of fertilizer to 4 days before the field was harvested.    
