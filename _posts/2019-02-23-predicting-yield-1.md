@@ -7,7 +7,7 @@ title: Predicting Crop Yield - Part I
 
 ### Introduction
 
-Here I'm sharing a series of posts that document my experience managing a two-year USDA grant study. This project considers how low-cost vegetation indices like NDVI may be useful additions to a sugarcane farmer's overall nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excessive nitrogen in the environment alters ecosystems and may potentially harm human health. Thus, learning to manage N application better is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some posts will include references to the software used and to the code developed in deriving our final results.   
+Here I'm sharing a series of posts that document my experience with a two-year USDA grant study. The project considered how low-cost vegetation indices like NDVI might be a useful addition to a sugarcane farmer's overall nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excessive nitrogen in the environment alters ecosystems and may potentially harm human health. Thus, learning to manage N application better is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some posts will include references to the software used and to the code developed in deriving our final results.   
 
 ### Background
 
@@ -63,4 +63,4 @@ A more interesting thing revealed here are the shades of red in different parts 
 <br />  
 ![CIR Section 001]({{ site.url }}/assets/2017-04-25_001_3_CIR.png){:height="50px" width="200px"} 
 
-Before moving on to the next post I show an image of a single treated section. After going to the trouble of accurately stitching hundreds of images we cut that larger one up very precisely into smaller samples. The section above represents a single treatment gathered on a specific day during the sugarcane growing season from late April to mid-November. Ultimately more than a dozen useable samples per treatment from this field were captured, each spaced as evenly as weather permitted beginning a one week prior to fertilizing to 4 days prior to harvest.
+Before moving on to the next post I show an image of a single treated section. After going to the trouble of accurately stitching hundreds of images we cut that larger one up precisely into smaller samples. The section above represents a single treatment gathered on a specific day during the sugarcane growing season from late April to mid-November. Ultimately more than a dozen useable samples per treatment from this field were captured, each spaced as evenly as weather permitted beginning a one week prior to fertilizing to 4 days prior to harvest.
