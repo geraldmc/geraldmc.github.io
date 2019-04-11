@@ -14,7 +14,7 @@ Here I'm sharing a series of posts that document my experience managing a two-ye
 Our crop is sugarcane (*Saccharum officinarum*). First introduced into Louisiana in 1751 it is the highest valued row-crop in the state. While recent decades have seen a decline in Louisiana sugarcane acreage, crop values have remained stable due to increases in yield. Increased sucrose yield is attributable mainly to the addition of nitrogen fertilizer. Thus, how we manage nitrogen application is relevant to sugarcane farmers (economics) and to everyone else (environment). 
  
 ### Goals
-Our primary goal was to determine whether low-cost aerial NDVI and related vegetation indices would correlate with variable N rates when applied to sugarcane. A secondary goal was to determine if our analysis might be useful in predicting yield potential of a future sugarcane crop.
+Our primary goal was to determine whether low-cost aerial NDVI and related vegetation indices would correlate with variable N rates when applied to sugarcane. A secondary goal was to determine if such an analysis might be useful for predicting the yield potential of a future sugarcane crop.
 
 We asked two questions:
 
