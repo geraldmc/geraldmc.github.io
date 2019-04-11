@@ -41,13 +41,13 @@ The Sequoia camera is about the size of a GoPro. It’s lightweight enough to se
 <br />  
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
-The image above shows a composite NRG taken from a height of about 325 ft on a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The image below (from 2016) show the result of stitching together a dozen or so images from a balloon flight. Perhaps you can see how much better we got at this! 
+The image above shows a composite NRG taken from a height of about 325 ft on a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The image below (from 2016) show the result of stitching a dozen or so images from a balloon flight. Can see how much better we got at this over time! 
 
 ![NGR Highlight]({{ site.url }}/assets/map-stitch.gif){:height="275px" width="425px"}
 <br />  
 
-While the work of this grant involved many long days spent in a cane field gathering data, it also required time in front of computer screen trying to make sense of that data. The following is a snippet of code used to separate out each band of light from an original 'raw' data file produced by the Sequoia camera. 
-
+While the work of this grant involved long days spent in a cane field gathering data it also required ample time in front of computer making sense of that data. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is only a small part of a larger image-processing pipeline that was developed to automate the work.  
+<br />  
 <!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
