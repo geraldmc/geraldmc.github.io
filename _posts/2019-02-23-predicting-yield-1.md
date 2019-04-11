@@ -45,15 +45,16 @@ The image above shows a composite NRG taken a clear day in late April, 2018. It'
 ![NGR Highlight]({{ site.url }}/assets/map-stitch.gif){:height="275px" width="425px"}
 <br />  
 
-While the work of this grant involved long days spent in a cane field gathering data it also required time in front of a computer to make sense of it all. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is a small part of a larger image-processing pipeline that was developed to automate the work.  
+While the work of this grant involved long days spent in a cane field gathering data it also required time in front of a computer to make sense of it all. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline that was developed to automate the work.  
 <br /> 
--------- 
 <!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 <br />  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The final result of stitching together many hundreds of smaller images, separating the individual bands and processing these in terms of simple statistical methods resulted in an initial image of the full study area. The image below shows the grid of test plots as an NRG vegetation index acquired on July 28th, 2017, at the height of the growing season. It was plenty hot that day! 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 <br />  
 ![CIR Section 001]({{ site.url }}/assets/2017-04-25_001_3_CIR.png){:height="50px" width="200px"} 
