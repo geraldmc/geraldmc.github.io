@@ -30,16 +30,20 @@ Our study area was planted and harvested over two successive seasons. We used a 
 As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180 kg·N·ac−1) were applied in a trial setup with six replicates. This gave us 30 plots (100 × 20 sq ft each) making a total trial size of ~1.5 acres.
 
 ![Treatments]({{ site.url }}/assets/treatment-grid.png){:height="200px" width="850px"} 
+<br />  
 
 Creating a vegetation index requires first getting a camera into the air and as we progressed we used kites, then balloons and ultimately an unassisted aerial drone (UAV). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with the rigs needed to reproducibly fly them. Ultimately we got some help from the folks at Micasense and used their multi-spectral camera, the Sequoia:
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="325px" width="325px"}
+<br />  
 
 The Sequoia camera is about the size of a GoPro. It’s lightweight enough to serve as payload on a consumer-style drone such as the one we selected (a 3DR Solo). Flying the camera over a field allowed us to collect light reflecting from the leaves of the field in a very specific way. As the image indicates the Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands. By manipulating these various bands we were able to create different kinds of vegetation index, one of which is known as an NRG index. While most of us are familiar with RGB images in an NRG image the RGB (Red-Green-Blue) colors are swapped out for a different set, NIR (Near-infrared), the Red and the Green.
 
 The image below shows an NRG image taken from a height of about 325 ft on a clear day in late April, 2018. 
 
+<br />  
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="250px" width="300px"}
+<br />  
 
 <!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
