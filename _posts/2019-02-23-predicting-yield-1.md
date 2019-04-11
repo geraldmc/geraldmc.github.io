@@ -56,9 +56,9 @@ The process of stitching together many hundreds of smaller images, separating th
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
-Two things to notice: my car is viewed twice - once in the upper-left and again in the middle-right part of the image. That's because the area was too long (1200ft) to be covered by a single flight and had to be flown it two separate ones - one for the left half and one for the right. Consumer drones use up their battery power fast!
+Two things to notice: my car is viewed twice - once in the upper-left and again in the middle-right part of the image. That's because the area was too long (1200ft) to be covered by a single flight and had to be flown twice each time - once for the left half and once for the right. Consumer drones use their battery power very fast!
 
-The second thing to see are the different shades of red in different parts of the grid. At the start of this post I mentioned how we treated separate sections of the study area (about 100 ft by 20 ft each, where a single row is roughly 6 feet wide). The different shades signify different intensities of near-infrared light being reflected from each section. If you look back at the start of this post you'll see that treatment (#4) for 120 kg·N·ac−1 (in the colored grid) appears in a pattern. That pattern is clearly visible in this image. It reveals the differing amounts of nitrogen fertilizer applied to different sections.   
+The second thing to see are the different shades of red in different parts of the grid. At the start of this post I mentioned how we treated separate sections of the study area (each about 100 ft by 20 ft, where a single row is roughly 6 feet wide) with a different amount of N fertilizer. These different shades of red signify different intensities of near-infrared light being reflected from that section. If you look back at the start of the post you'll see that treatment (#4) for 120 kg·N·ac−1 (in the colored grid) appears in a certain pattern. That pattern is clearly visible in this image. It reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the amount of NIR light they reflect. In the next post I'll explain why.    
 
 <br />  
 ![CIR Section 001]({{ site.url }}/assets/2017-04-25_001_3_CIR.png){:height="50px" width="200px"} 
