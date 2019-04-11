@@ -40,7 +40,7 @@ The Sequoia camera is about the size of a GoPro. It’s lightweight enough to se
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
-The image above shows a composite NRG taken from a height of about 325 ft on a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The two rectangles in yellow are test plots. The green square highlights my white Jetta and me for scale. The image below (from 2016) show the result of stitching a dozen or so images from a balloon flight. We got better at this over time! 
+The image above shows a composite NRG taken a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The two rectangles in yellow are test plots. The green square highlights my white Jetta and me for scale. The image below (from 2016) show the result of stitching a dozen or so images from a balloon flight. We got better at this over time! 
 
 ![NGR Highlight]({{ site.url }}/assets/map-stitch.gif){:height="275px" width="425px"}
 <br />  
