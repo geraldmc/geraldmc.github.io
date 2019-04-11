@@ -7,7 +7,7 @@ title: Predicting Crop Yield - Part I
 
 ### Introduction
 
-Here I'm sharing a series of posts that document my experience managing a two-year USDA grant study. This project considers how low-cost vegetation indices like NDVI may be useful additions to a sugarcane farmer's overall nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excessive nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue.  
+Here I'm sharing a series of posts that document my experience managing a two-year USDA grant study. This project considers how low-cost vegetation indices like NDVI may be useful additions to a sugarcane farmer's overall nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excessive nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some posts will include references to the software used and the code developed to derive our final results.   
 
 ### Background
 
@@ -31,13 +31,13 @@ As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180
 
 ![Treatments]({{ site.url }}/assets/treatment-grid.png){:height="200px" width="850px"} 
 
-Creating a vegetation index requires first getting a camera into the air and as we progressed we used kites, then balloons and ultimately an unassisted aerial drone (UAV). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with the rigs needed to reproducibly fly them. Ultimately we got some help from the folks at Micasense and used their multi-spectral camera, the Sequoia.
+Creating a vegetation index requires first getting a camera into the air and as we progressed we used kites, then balloons and ultimately an unassisted aerial drone (UAV). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with the rigs needed to reproducibly fly them. Ultimately we got some help from the folks at Micasense and used their multi-spectral camera, the Sequoia:
 
-![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="250px" width="250px"}
+![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="325px" width="325px"}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="325px"}
+![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="250px" width="250px"}
 
 <!-- {% highlight python %} {% endhighlight %} -->
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
