@@ -35,9 +35,9 @@ Creating a vegetation index requires first getting a camera into the air and as 
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="325px" width="325px"}
 
-The Sequoia camera is about the size of a GoPro. It’s lightweight enough to serve as payload on a consumer-style drone such as the one we selected (a 3DR Solo). Flying the camera over a field allowed us to collect light reflecting from the leaves of the field in a very specific way. As the image indicates the Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands. By manipulating these various bands we were able to create different kinds of vegetation index, one of which is known as an NRG index. Most or us are familiar with RGB images but in an NRG image the RGB (Red-Green-Blue) colors are swapped out for a different, the NIR (Near-infrared), the Red and the Green.
+The Sequoia camera is about the size of a GoPro. It’s lightweight enough to serve as payload on a consumer-style drone such as the one we selected (a 3DR Solo). Flying the camera over a field allowed us to collect light reflecting from the leaves of the field in a very specific way. As the image indicates the Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands. By manipulating these various bands we were able to create different kinds of vegetation index, one of which is known as an NRG index. While most of us are familiar with RGB images in an NRG image the RGB (Red-Green-Blue) colors are swapped out for a different set, NIR (Near-infrared), the Red and the Green.
 
-The image below is an NRG image taken from a height of about 325 ft on a clear day in late April, 2018. 
+The image below shows an NRG image taken from a height of about 325 ft on a clear day in late April, 2018. 
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="250px" width="300px"}
 
