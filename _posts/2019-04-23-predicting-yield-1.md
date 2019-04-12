@@ -32,7 +32,7 @@ As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180
 ![Treatments]({{ site.url }}/assets/treatment-grid.png){:height="200px" width="850px"} 
 <br />  
 
-Creating a vegetation index requires getting a camera into the air and as we progressed we used kites, then balloons and ultimately an unassisted aerial drone (UAV). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with the rigs needed to reproducibly fly them. Ultimately we got some help from the folks at Micasense and used their multi-spectral camera, the Sequoia:
+Creating a vegetation index requires getting a camera into the air and as we progressed we used kites, balloons and ultimately an unassisted aerial vehicle (a drone). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with the rigs needed to reproducibly fly them. Ultimately we got help from the folks at Micasense and used their multi-spectral camera, the Sequoia:
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="225px"}
 
