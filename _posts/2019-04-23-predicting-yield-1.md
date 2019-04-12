@@ -7,7 +7,7 @@ title: Predicting Crop Yield - Part I
 
 ### Introduction
 
-I'm sharing a series of posts to document my experiences running a two-year USDA grant study. The project considered how low-cost vegetation indices like NDVI might be useful additions to a sugarcane farmer's nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excessive nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving results.   
+I'm sharing a series of posts to document my experiences running a two-year USDA grant study. The project considered how low-cost vegetation indices like NDVI might be useful additions to a sugarcane farmer's nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excess nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving results.   
 
 ### Background
 
@@ -36,7 +36,7 @@ Creating a vegetation index requires getting a camera into the air and keeping i
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="225px"}
 
-The Sequoia is about the size of a GoPro. It’s a lightweight payload for a consumer-style drone such as the one we selected (a 3DR Solo). Flying this camera over a field allowed us to collect light reflected from sugarcane in a variety of very specific ways. The Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands. By manipulating these narrow bands we were able to create different vegetation indices, one of which is known as the NRG. Most are familiar with RGB images but in an NRG image the RGB colors (Red-Green-Blue) are swapped for a different set: NIR (Near-infrared), Red and the Green. Here is an example NRG image.
+The Sequoia is about the size of a GoPro. It’s a lightweight payload for a consumer-style drone such as the one we selected (a 3DR Solo). Flying this camera over a field allowed us to collect light reflected from sugarcane in a variety of specific ways. The Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands. By manipulating these bands we were able to create different vegetation indices, one of which is known as the NRG. Most are familiar with RGB images but in an NRG image the RGB colors (Red-Green-Blue) are swapped for a different set: NIR (Near-infrared), Red and the Green. Here is an example NRG image.
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
@@ -49,7 +49,7 @@ The work of this grant involved many long days in a cane field gathering data bu
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
 
-The process of stitching together hundreds of small images, separating the individual bands and running simple computational methods results in an image of the full study area (below). This image (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG index at the height of the growing season. I recall it was plenty hot that day!
+The chained process of stitching together hundreds of smaller images, separating the individual bands, and running computational methods over the results ultimately provides an image of the full study area (below). This image (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG at the height of the growing season.
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
