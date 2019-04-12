@@ -40,7 +40,7 @@ The Sequoia is about the size of a GoPro. It’s a lightweight payload for a con
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
-The image above is a composite NRG taken on a clear day in late April, 2018. It's made up of many smaller images in a process involving orthorectification and stitching. The two rectangles in yellow are test plots. The green square highlights my white Jetta (and me). 
+The image above is a composite NRG taken on a clear day in late October, 2018. It's made up of many smaller images in a process involving orthorectification and image-stitching. The two yellow rectangles are test plots. The green square highlights my white Jetta (and me). 
 
 The work of this grant involved many long days in a cane field gathering data but it also required time in front of a computer making sense of that data. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline developed to automate the work.
 <br />  
