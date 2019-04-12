@@ -61,6 +61,8 @@ A funny thing to notice: my car appears twice in the image - once in the upper-l
 
 A more interesting observation is revealed in shades of red over different parts of the grid. Earlier I mentioned how we treated separate sections of the area (each about 100 ft by 20 ft, where a single row is roughly 6 feet wide) with a different amount of N fertilizer. The varying shades of red signify different intensities of near-infrared light reflecting from each section. The treatment of 0 kg·N·ac−1 (#1 in the colored grid at the start of this post) appears as a pattern and that pattern is visible here. The image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the amount of NIR light they reflect. In the next post I'll explain why.    
 
+### Datum
+
 <br />  
 ![CIR Section 001]({{ site.url }}/assets/2017-04-25_001_3_CIR.png){:height="50px" width="200px"} 
 
