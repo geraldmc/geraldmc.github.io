@@ -7,7 +7,7 @@ title: Predicting Crop Yield - Part I
 
 ### Introduction
 
-I'm sharing a series of posts to document my experiences running a two-year USDA grant study. The project considered how low-cost vegetation indices like NDVI might be useful additions to a sugarcane farmer's nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excess nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving results.   
+I'm sharing a series of posts to document my experiences running a two-year USDA grant study. The project considered how low-cost vegetation indices like NDVI might be useful additions to a sugarcane farmer's nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excess nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving the results.   
 
 ### Background
 
@@ -32,6 +32,8 @@ As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180
 ![Treatments]({{ site.url }}/assets/treatment-grid.png){:height="200px" width="850px"} 
 <br />  
 
+### Tools
+
 Creating a vegetation index requires getting a camera into the air and keeping it there. As we progressed we used kites, balloons and ultimately an unassisted aerial vehicle (a drone). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with rigs needed to reproducibly fly them. Ultimately we got help from the folks at [Micasense](https://www.micasense.com/) and used their multi-spectral camera, the Sequoia:
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="225px"}
@@ -42,7 +44,9 @@ The Sequoia is about the size of a GoPro. It’s a lightweight payload for a con
 
 The image above is a composite NRG taken on a clear day in late October, 2018. It's made up of many smaller images in a process involving orthorectification and image-stitching. The two yellow rectangles are test plots. The green square highlights my white Jetta (and me). 
 
-The work of this grant involved many long days in a cane field gathering data but it also required time in front of a computer making sense of that data. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline developed to automate the work.
+### Data
+
+The work of this grant involved long days in a cane field gathering data but it also required time in front of a computer making sense of that data. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline developed to automate the work.
 <br />  
 
 <!-- {% highlight python %} {% endhighlight %} -->
