@@ -7,14 +7,14 @@ title: Predicting Crop Yield - Part I
 
 ### Introduction
 
-I'm sharing a series of posts to document my experiences running a two-year USDA grant study. The project considered how low-cost vegetation indices like NDVI might become a useful addition to a sugarcane farmer's overall nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excessive nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving our results.   
+I'm sharing a series of posts to document my experiences running a two-year USDA grant study. The project considered how low-cost vegetation indices like NDVI might become a useful addition to a sugarcane farmer's overall nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excessive nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving results.   
 
 ### Background
 
 Our crop is sugarcane (*Saccharum officinarum*). First introduced in 1751 it is the highest valued row-crop in Louisiana. While recent decades have seen a decline in sugarcane acreage crop values have remained stable due to increases in yield. Increased yield is attributable mainly to the addition of nitrogen fertilizer. Thus, how we manage N application is relevant to farmers (economics) and to everyone else (the environment). 
  
 ### Goals
-During this study our primary goal was to determine whether low-cost aerial NDVI and other indices would accurately correlate with variable N rates when applied to sugarcane. A secondary goal was to determine if such analysis might be useful for predicting the yield potential of a future crop. Our work was carried out with the intention of revealing techniques that are affordable, accessible and, most importantly, *effective*.
+During our study the primary goal was to determine whether low-cost aerial NDVI and other indices would accurately correlate with variable N rates when applied to sugarcane. A secondary goal was to determine if such analysis might be useful for predicting the yield potential of a future crop. Our work was carried out with the intention of revealing techniques that are affordable, accessible to ordinary farmers and, most importantly, *effective*.
 
 We asked two questions:
 
@@ -23,7 +23,7 @@ We asked two questions:
 * Are models of acquired multi-spectral imagery predictive of yield?
 
 
- To that end a study area was set aside, planted and harvested over two successive seasons. We used a Latin Square design divided into 30 sections over an area of 1200 by 60 ft. Here is a overview of the area located on our farm in Houma, LA.
+ To answers these questions a study area was set aside, planted and harvested over two successive seasons. We used a Latin Square design divided into 30 sections over an area of 1200 by 60 ft. Here is a overview of the area located on our farm in Houma, LA.
 
 ![Study Area]({{ site.url }}/assets/study-area.png){:height="200px" width="850px"} 
 
@@ -32,18 +32,15 @@ As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180
 ![Treatments]({{ site.url }}/assets/treatment-grid.png){:height="200px" width="850px"} 
 <br />  
 
-Creating a vegetation index requires getting a camera in the air and keeping it there more or less in place. As we progressed we used kites, balloons and ultimately an unassisted aerial vehicle (a drone). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with the rigs needed to reproducibly fly them. Ultimately we got help from the folks at Micasense and used their multi-spectral camera, the Sequoia:
+Creating a vegetation index requires getting a camera into the air and keeping it there. As we progressed we used kites, balloons and ultimately an unassisted aerial vehicle (a drone). We [created our own multi-spectral cameras](https://publiclab.org/wiki/near-infrared-camera) along with the rigs needed to reproducibly fly them. Ultimately we got help from the folks at Micasense and used their multi-spectral camera, the Sequoia:
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="225px"}
 
-The Sequoia is about the size of a GoPro. It’s lightweight enough to serve as payload on a consumer-style drone such as the one we selected (a 3DR Solo). Flying the camera over a field allowed us to collect light reflected from sugarcane in a very specific way. As the image indicates the Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge). By manipulating these separate bands we were able to create different vegetation indices, one of which is known as an NRG. While most are familiar with *RGB* images in an NRG image the RGB colors (Red-Green-Blue) are swapped for a different set, NIR (Near-infrared), Red and the Green.
+The Sequoia is about the size of a GoPro. It’s lightweight enough to serve as payload on a consumer-style drone such as the one we selected (a 3DR Solo). Flying the camera over a field allowed us to collect light reflected from sugarcane in a very specific way. As the image indicates the Sequoia collects light in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge). By manipulating these separate bands we were able to create different vegetation indices, one of which is known as an NRG. While most are familiar with *RGB* images in an NRG image the RGB colors (Red-Green-Blue) are swapped for a different set, NIR (Near-infrared), Red and the Green. Here is an example NRG image.
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
-The image above shows a composite NRG taken on a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The two rectangles in yellow are test plots. The green square highlights my white Jetta and me. The image below (from 2016) show the result of stitching a dozen or so images from a balloon flight. We got better at it over time! 
-
-![NGR Highlight]({{ site.url }}/assets/map-stitch.gif){:height="275px" width="425px"}
-<br />  
+The image above shows a composite NRG taken on a clear day in late April, 2018. It's composed of many smaller images in a process known as image-stitching. The two rectangles in yellow are test plots. The green square highlights my white Jetta and me. 
 
 While the work of this grant involved long days in a cane field gathering data it also required time in front of a computer screen to make sense of it. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline developed to automate the work.
 <br />  
