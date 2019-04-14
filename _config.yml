@@ -7,7 +7,7 @@ relative_permalinks: false
 # Setup
 title:               'terr&eacute; bon'
 tagline:             ' / the good earth'
-description:         'I am an experienced data and machine learning architect, entrepreneur, and musician (CDBaby <a href:"https://store.cdbaby.com/cd/thefreddiekingdom">here</a>) I like Hadoop and have a funny story to share: while technology promises abundance it leaves us wanting. More than technology we need compassion.'
+description:         'I am an experienced data and machine learning architect, entrepreneur, and musician (CDBaby <a href="https://store.cdbaby.com/cd/thefreddiekingdom">here</a>) I like Hadoop and have a funny story to share: while technology promises abundance it leaves us wanting. More than technology we need compassion.'
 url:                 https://geraldmc.github.io/
 baseurl:             ''
 paginate:            5
