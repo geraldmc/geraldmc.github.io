@@ -53,7 +53,7 @@ The work of this grant involved long days in a cane field gathering data but it 
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
 
-The chained process of stitching together hundreds of smaller images, separating the individual bands, and running computational methods over the results ultimately provides an image of the full study area (below). This image (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG at the height of the growing season.
+The process of stitching together hundreds of smaller images, separating the individual bands, and running computational methods over the results ultimately provides an image of the full study area (below). This image (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG at the height of the growing season.
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
