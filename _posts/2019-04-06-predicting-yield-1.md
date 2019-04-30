@@ -7,7 +7,7 @@ title: Predicting Crop Yield - Part I
 
 ### Introduction
 
-I'm sharing a series of posts to document the experience of running a two-year USDA grant study. The project considered how low-cost vegetation indices like NDVI might be useful additions to a sugarcane farmer's nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excess nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving the results.   
+Here I'm sharing a series of posts that document my experience of running a two-year USDA grant study. Our project considered low-cost vegetation indices such as NDVI and how these might be useful additions to a sugarcane farmer's nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excess nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving the results.   
 
 ### Background
 
