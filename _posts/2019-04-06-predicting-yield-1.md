@@ -46,7 +46,7 @@ The image above is a composite NRG of a sugarcane field taken on a clear day in 
 
 ### Data
 
-Completing this grant involved many long days in a sugarcane field gathering data but it also required time in front of a computer screen trying to make sense of the data. The following is a code snippet which acts to separate each band of light from the original 'raw' data file that's produced by the Sequoia camera during each flight. This is only part of a much larger image-processing pipeline that was developed to help automate the work.
+Completing this grant involved many long days in a sugarcane field gathering data but it also required time in front of a computer screen trying to make sense of the data. The following is a code snippet which acts to separate each band of light from the original 'raw' data file that's produced by the Sequoia camera during a flight. This is just one part of a much larger image-processing pipeline developed to help automate the work.
 <br />  
 
 <!-- {% highlight python %} {% endhighlight %} -->
