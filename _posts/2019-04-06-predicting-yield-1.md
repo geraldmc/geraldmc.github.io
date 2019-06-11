@@ -53,7 +53,7 @@ Completing this grant involved many long days in a sugarcane field gathering dat
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
 
-The process of stitching together hundreds of smaller images, separating the individual bands, and running computational methods over the results ultimately provides an image of the full study area (below). This image (acquired on July 28th, 2017) shows the complete grid of test plots as an NRG at the height of the growing season.
+The process of separating individual bands of light, stitching together hundreds of smaller images, and running the computational methods over the composite images ultimately results in an image of the full study area such as the one below. This image (acquired on July 28th, 2017) shows the full grid of test plots as an NRG at the height of the growing season.
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
