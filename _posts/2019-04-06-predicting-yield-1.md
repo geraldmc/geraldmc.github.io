@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Predicting Crop Yield - An Introduction
+title: Predicting Crop Yield From The Sky
 ---
 
 ![Treatments]({{ site.url }}/assets/sugar_cane.png){:height="200px" width="200px"} 
 
 ### Introduction
 
-Here I'm sharing a series of posts that document my experience of running a two-year USDA grant study. Our project considered low-cost vegetation indices such as NDVI and how these might be useful additions to a sugarcane farmer's nitrogen management strategy. The study was motivated by 1) yearly nitrogen input represents a significant cost to farmers; 2) excess nitrogen in the environment alters ecosystems and may potentially harm human health. Learning to better manage N application is motivated by the economics of sugarcane agriculture as well as by a need to address an environmental issue. Some of what follows will include reference to the software packages used along with code developed in deriving the results.   
+I'm sharing a series of posts to document my experience in running a two-year agricultural grant study. Our project was funded through the Sustainable Agriculture Research and Education (SARE) section of USDA. It considered the practical application and use of low-cost vegetation indices such as NDVI (more on that later) and was motivated by two important issues in sugarcane farming: 1) yearly nitrogen (N) input represents a significant cost to farmers; 2) excess nitrogen in the environment alters ecosystems and potentially harms human health. Learning how to manage nitrogen application better is thus motivated by the economics of sugarcane agriculture as well as by the need to address an ongoing environmental issue. For all you agri-geeks some of what follows includes reference to software packages and code developed to derive our results.
 
 ### Background
 
-Our crop is sugarcane (*Saccharum officinarum*). First introduced in 1751 it is the highest valued row-crop in Louisiana. While recent decades have seen a decline in sugarcane acreage,  crop values have remained stable due to increases in yield. Increased yield is attributable mainly to the addition of nitrogen fertilizer. Thus, how we manage N application is relevant to farmers (in terms of the economics) and to everyone else (for the environment). 
+Our crop is sugarcane (*Saccharum officinarum*). First introduced in the Americas in 1751 it is the highest valued row-crop in the state of Louisiana. While recent years have witnessed a decline in overall sugarcane acreage, crop values have remained generally stable due to increases in yield. Increased yield is attributable mainly to the addition of nitrogen fertilizer. Thus, how we manage N application is relevant to farmers (in terms of the economics) and to everyone else (in terms of the environment). 
  
 ### Goals
-During our study the primary goal was to determine whether low-cost aerial NDVI and other indices could accurately correlate with variable N rates when applied to sugarcane. A secondary goal was to determine if such analysis might be useful for predicting the yield potential of a future crop. Our work was carried out with the intention of revealing techniques that are affordable, accessible to ordinary farmers and, most importantly, *effective*.
+During our study the goal was to determine whether low-cost aerial NDVI and other indices like it could accurately correlate with variable N rates when applied to sugarcane. A secondary goal was to determine if such analysis was useful in predicting the yield potential of a future crop. Our work was carried out with the intention of revealing techniques that are affordable, accessible to ordinary farmers and, most importantly, *effective*.
 
 We asked two questions:
 
