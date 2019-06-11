@@ -11,7 +11,7 @@ I'm sharing a series of posts that document my experiences running a two-year ag
 
 ### Background
 
-Our crop is sugarcane (*Saccharum officinarum*). First introduced in the Americas into 1751 it is the highest valued row-crop in the state of Louisiana. While recent years have witnessed a decline in overall sugarcane acreage, crop values have remained generally stable due to increases in yield. Since increased yield is attributable mainly to the addition of nitrogen fertilizer, how we manage N application is relevant to farmers (in terms of the economics) and to everyone else (in terms of the environment). 
+Our crop is sugarcane (*Saccharum officinarum*). First introduced into the Americas in 1751 it is the highest valued row-crop in the state of Louisiana. While recent years have witnessed a decline in overall sugarcane acreage, crop values have remained generally stable due to increases in yield. Since increased yield is attributable mainly to the addition of nitrogen fertilizer, how we manage N application is relevant to farmers (in terms of the economics) and to everyone else (in terms of the environment). 
  
 ### Goals
 Our study goal was to determine whether low-cost aerial NDVI and other indices could accurately correlate variable N rates when applied to sugarcane. A secondary goal was to determine if such analysis was useful in predicting the yield potential of a future crop. Our work was carried out with the intention of revealing techniques that are affordable, accessible to ordinary farmers and, most importantly, *effective*.
@@ -23,7 +23,7 @@ We asked two questions:
 * Are models of acquired multi-spectral imagery predictive of yield?
 
 
- To answers these questions a study area was set aside, planted and harvested over two successive seasons. We used a Latin Square design divided into 30 sections over an area of 1200 by 60 ft. Here is a overview of the area located on our farm in Houma, LA.
+ To answers these questions a study area was set aside, planted and harvested over two successive seasons. We used a Latin Square design divided into 30 sections over an area of 1200 by 60 ft. Here is a overview of the area located in Houma, LA.
 
 ![Study Area]({{ site.url }}/assets/study-area.png){:height="200px" width="850px"} 
 
