@@ -38,7 +38,7 @@ Creating a vegetation index first requires getting a camera into the air. As we 
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="225px"}
 
-The Sequoia is about the size of a GoPro camera. It’s lightweight enough to fly from a consumer-style drone such as the 3DR Solo. Flying this camera over a field allows us to collect light reflected in a variety of ways. The Sequoia is sensitive in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands and by manipulating these bands we created different vegetation indices, one of which is known as the NRG. Most folks are familiar with RGB images but in an NRG image the standard RGB colors (Red-Green-Blue) are exchanged for a different set of color bands: NIR (Near-infrared), Red and Green. Here is an example NRG image.
+The Sequoia is about the size of a GoPro camera. It’s lightweight enough to fly from a consumer-style drone such as the 3DR Solo. Flying this camera over a field allows us to collect light reflected in a variety of ways. The Sequoia is sensitive in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands and by manipulating these bands we created different vegetation indices, one of which is known as the NRG. Most folks are familiar with RGB images but in an NRG image the standard RGB colors (Red-Green-Blue) are exchanged for a different set of color bands: NIR (Near-infrared), Red and Green. Here is an example NRG image:
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
@@ -53,11 +53,11 @@ Completing this grant involved many long days in a sugarcane field gathering dat
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
 
-The process of separating individual bands of light, stitching together hundreds of smaller images, and running the computational methods over the composite images ultimately results in an image of the full study area such as the one below. This image (acquired on July 28th, 2017) shows the full grid of test plots as an NRG at the height of the growing season.
+The process of separating individual bands of light, stitching together hundreds of smaller images, and running  computational methods over the composite result ultimately produces an image of the study area such as the one below. This image (acquired on July 28th, 2017) shows the full grid of test plots as an NRG image at the height of the growing season.
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
-A funny thing to notice: my car appears twice in the image - once in the upper-left and again at the far-right. The study area was too long (1200ft) to be covered by a single flight thus it had to be flown twice during each capture - once for the left half and once for the right. I would set up one side, fly the mission, pack everything up and drive to the other side.
+If you look closely you will see that a car appears twice in this image - once in the upper-left and again at the far-right. The study area was too long (1200ft) to be covered by a single flight thus it had to be flown twice during each capture - once for the left half and once for the right. I would set up one side, fly the mission, pack everything up and drive to the other side.
 
 A more interesting observation is revealed in shades of red over different parts of the grid. Earlier I mentioned how we treated separate sections of the area (each about 100 ft by 20 ft, where a single row is roughly 6 feet wide) with a different amount of N fertilizer. The varying shades of red signify different intensities of near-infrared light reflecting from each section. The treatment of 0 kg·N·ac−1 (#1 in the colored grid at the start of this post) appears as a pattern and that pattern is visible here. The image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the amount of NIR light they reflect. In the next post I'll explain why.    
 
