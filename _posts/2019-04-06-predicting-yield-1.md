@@ -38,7 +38,7 @@ Creating a vegetation index first requires getting a camera into the air. As we 
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="225px"}
 
-The Sequoia is about the size of a GoPro camera. It’s lightweight enough to fly from a consumer-style drone such as the 3DR Solo. Flying this camera over a field allows us to collect light reflected in a variety of ways. The Sequoia is sensitive in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands and by manipulating these bands we can create different vegetation indices, one of which is known as the NRG. Most folks are familiar with RGB images but in an NRG image the standard RGB colors (Red-Green-Blue) are exchanged for a different set of color bands: NIR (Near-infrared), Red and the Green. Here is an example NRG image.
+The Sequoia is about the size of a GoPro camera. It’s lightweight enough to fly from a consumer-style drone such as the 3DR Solo. Flying this camera over a field allows us to collect light reflected in a variety of ways. The Sequoia is sensitive in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands and by manipulating these bands we created different vegetation indices, one of which is known as the NRG. Most folks are familiar with RGB images but in an NRG image the standard RGB colors (Red-Green-Blue) are exchanged for a different set of color bands: NIR (Near-infrared), Red and Green. Here is an example NRG image.
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
@@ -46,7 +46,7 @@ The image above is a composite NRG of a sugarcane field taken on a clear day in 
 
 ### Data
 
-The work of this grant involved long days in a cane field gathering data but it also required time in front of a computer making sense of that data. The following is a snippet of code used to separate each band of light from an original 'raw' data file produced by the Sequoia camera. This is part of a larger image-processing pipeline developed to automate the work.
+Completing this grant involved many long days in a sugarcane field gathering data but it also required time in front of a computer screen trying to make sense of the data. The following is a code snippet which acts to separate each band of light from the original 'raw' data file that's produced by the Sequoia camera during each flight. This is only part of a much larger image-processing pipeline that was developed to help automate the work.
 <br />  
 
 <!-- {% highlight python %} {% endhighlight %} -->
