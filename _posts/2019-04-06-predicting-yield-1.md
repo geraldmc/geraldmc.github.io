@@ -27,7 +27,7 @@ We asked two questions:
 
 ![Study Area]({{ site.url }}/assets/study-area.png){:height="200px" width="850px"} 
 
-As indicated below five levels of nitrogen fertilization (0, 40, 80, 120 and 180 kg·N·ac−1) were applied in a trial setup with six replicates. This gave us 30 individual plots (100 × 20 sq ft each) making a total trial size of ~1.5 acres.
+As indicated by the graphic below five levels of nitrogen fertilization (0, 40, 80, 120 and 180 kg·N·ac−1) were applied in a trial setup with six replicates. This gave us 30 individual plots (100 × 20 sq ft each) making a total trial size of ~1.5 acres.
 <br />  
 ![Treatments]({{ site.url }}/assets/treatment-grid.png){:height="200px" width="850px"} 
 <br />  
@@ -38,7 +38,7 @@ Creating a vegetation index first requires getting a camera into the air. As we 
 
 ![NGR Highlight]({{ site.url }}/assets/parrot-sequoia-camera.png){:height="225px" width="225px"}
 
-The Sequoia is about the size of a GoPro camera. It’s lightweight enough to fly from a consumer-style drone such as the 3DR Solo. Flying this camera over a field allows us to collect light reflected in a variety of ways. The Sequoia is sensitive in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands and by manipulating these bands we created different vegetation indices, one of which is known as the NRG. Most folks are familiar with RGB images but in an NRG image the standard RGB colors (Red-Green-Blue) are exchanged for a different set of color bands: NIR (Near-infrared), Red and Green. Here is an example NRG image:
+The Sequoia is about the size of a GoPro camera. It’s lightweight enough to fly from a consumer-style drone such as the 3DR Solo. Flying this camera over a field allowed us to collect light reflected in a variety of ways. The Sequoia is sensitive in the Green, Red, Near-infrared and [RedEdge](https://en.wikipedia.org/wiki/Red_edge) bands and by manipulating these bands we created different vegetation indices, one of which is known as the NRG. Most folks are familiar with RGB images but in an NRG image the standard RGB colors (Red-Green-Blue) are exchanged for a different set of color bands: NIR (Near-infrared), Red and Green. Here is an example NRG image:
 
 ![NGR Highlight]({{ site.url }}/assets/NGR-highlight-scale.png){:height="275px" width="425px"}
 
@@ -46,7 +46,7 @@ The image above is a composite NRG of a sugarcane field taken on a clear day in 
 
 ### Data
 
-Completing this grant involved many long days in a sugarcane field gathering data but it also required time in front of a computer screen trying to make sense of the data. The following is a code snippet which acts to separate each band of light from the original 'raw' data file that's produced by the Sequoia camera during a flight. This is just one part of a much larger image-processing pipeline developed to help automate the work.
+Completing this grant involved many long days in a sugarcane field gathering data but it also required time in front of a computer screen trying to make sense of the data. The following is a code snippet that acts to separate each band of light from the original 'raw' data file that's produced by the Sequoia camera. This is just one part of a much larger image-processing pipeline developed to help automate the work.
 <br />  
 
 <!-- {% highlight python %} {% endhighlight %} -->
@@ -57,9 +57,9 @@ The process of separating individual bands of light, stitching together hundreds
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
-If you look closely you will see that a car appears twice in this image - once in the upper-left and again at the far-right. The study area was too long (1200ft) to be covered by a single flight thus it had to be flown twice during each capture - once for the left half and once for the right. I would set up one side, fly the mission, pack everything up and drive to the other side.
+If you look closely you can see a car that appears twice in the image - once in the upper-left and again at the far-right. The study area was too long (1200ft) to be covered in a single flight; it had to be flown twice during each capture - once for the left half and once for the right. We would set up and fly one side, pack everything up and drive to the other side of and fly again.
 
-A more interesting observation is revealed in shades of red over different parts of the grid. Earlier I mentioned how we treated separate sections of the area (each about 100 ft by 20 ft, where a single row is roughly 6 feet wide) with a different amount of N fertilizer. The varying shades of red signify different intensities of near-infrared light reflecting from each section. The treatment of 0 kg·N·ac−1 (#1 in the colored grid at the start of this post) appears as a pattern and that pattern is visible here. The image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the amount of NIR light they reflect. In the next post I'll explain why.    
+A more interesting observation are the alternating shades of red visible in different parts of the grid. Earlier I mentioned how we treated different sections of the area (each about 100 ft by 20 ft) with a different amount of nitrogen fertilizer. The varying shades of red signify different intensities of near-infrared light reflecting from each section. The treatment of 0 kg·N·ac−1 (#1 in the colored grid at the start of this post) appears as a pattern and that pattern is visible here. The image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the amount of NIR light they reflect. In the next post I'll explain why.    
 
 ### Datum
 
