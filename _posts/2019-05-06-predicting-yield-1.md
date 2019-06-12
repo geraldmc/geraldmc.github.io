@@ -53,11 +53,11 @@ Completing this grant involved many long days in a sugarcane field gathering dat
 <script src="https://gist.github.com/geraldmc/1d3f059a33a30caf73a7f0446892f76f.js"></script>
 <br />  
 
-The process of separating individual bands of light, stitching together hundreds of smaller images, and running  computational methods over the composite result ultimately produces an image of the study area such as the one below. This image (acquired on July 28th, 2017) shows the full grid of test plots as an NRG image at the height of the growing season.
+The process of separating individual bands of light, stitching together hundreds of smaller images, and running  computational methods over the result ultimately produces an image like the one shown below. This image (acquired on July 28th, 2017) shows the full study grid as an NRG image at the height of the growing season.
 
 ![NGR Full]({{ site.url }}/assets/NGR-full-view.png){:height="200px" width="850px"} 
 
-If you look closely you can see a car that appears twice in the image - once in the upper-left and again at the far-right. The study area was too long (1200ft) to be covered by a single flight; it had to be flown twice during each capture - once for the left half and once for the right. We would set up and fly one side, pack everything up and drive to the other side of and fly again.
+If you look closely you can see a car that appears twice in the image - once in the upper-left and again at the far-right. The study area was too long (1200ft) to be covered in a single flight; it had to be flown twice during each capture - once for the left half and once for the right. We would set up and fly one side, pack everything up and drive to the other and fly again.
 
 A more interesting observation are the alternating shades of red visible in different parts of the grid. Earlier I mentioned how we treated different sections of the area (each about 100 ft by 20 ft) with a different amount of nitrogen fertilizer. The varying shades signify different intensities of near-infrared light reflecting from each section. The treatment of 0 kg·N·ac−1 (#1 in the colored grid at the start of this post) appears as a visible pattern. The image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the amount of NIR light they reflect and in the next post I'll explain why.    
 
