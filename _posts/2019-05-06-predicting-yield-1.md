@@ -11,7 +11,7 @@ I'm sharing a series of posts that document my experiences running a two-year ag
 
 ### Background
 
-Our crop is sugarcane (*Saccharum officinarum*). First introduced into the Americas in 1751 it is the highest valued row-crop in the state of Louisiana. While recent years have witnessed a decline in overall sugarcane acreage, crop values have remained generally stable due to increases in yield. Since increased yield is attributable mainly to the addition of nitrogen fertilizer, how we manage N application is relevant to farmers (in terms of the economics) and to everyone else (in terms of the environment). 
+Our crop is sugarcane (*Saccharum officinarum*). First introduced into the Americas in 1751 it is the highest valued row-crop in the state of Louisiana. While recent years have witnessed a decline in overall sugarcane acreage, crop values have remained stable due to increases in yield. Since increased yield is attributable mainly to the addition of nitrogen fertilizer, how we manage N application is relevant to farmers (in terms of the economics) and to everyone else (in terms of the environment). 
  
 ### Goals
 Our study goal was to determine whether low-cost aerial NDVI and other indices could accurately correlate variable N rates when applied to sugarcane. A secondary goal was to determine if such analysis was useful in predicting the yield potential of a future crop. Our work was carried out with the intention of revealing techniques that are affordable, accessible to ordinary farmers and, most importantly, *effective*.
@@ -59,7 +59,7 @@ The process of separating individual bands of light, stitching together hundreds
 
 If you look closely you can see a car that appears twice in the image - once in the upper-left and again at the far-right. The study area was too long (1200ft) to be covered in a single flight; it had to be flown twice during each capture - once for the left half and once for the right. We would set up and fly one side, pack everything up and drive to the other and fly again.
 
-A more interesting observation are the alternating shades of red visible in different parts of the grid. Earlier I mentioned how we treated different sections of the area (each about 100 ft by 20 ft) with a different amount of nitrogen fertilizer. The varying shades signify different intensities of near-infrared light reflecting from each section. The treatment of 0 kg·N·ac−1 (#1 in the colored grid at the start of this post) appears as a visible pattern. The image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the amount of NIR light they reflect and in the next post I'll explain why.    
+A more interesting observation are the alternating shades of red color visible in different parts of the grid. Earlier I mentioned how we treated sections of the area (each about 100 ft by 20 ft) with alternative amounts of nitrogen fertilizer. The varying shades signify different intensities of near-infrared light reflecting from each section. The treatment of 0 kg·N·ac−1 (#1 in the colored grid at the start of this post) appears as a visible pattern. The image reveals that differing amounts of nitrogen fertilizer applied to different sections are discernable in terms of the amount of NIR light they reflect and in the next post I'll explain why.    
 
 ### The Datum
 
