@@ -11,6 +11,6 @@ Our project was extended over a second, and again a third season after too much 
 
 In [Part I](https://geraldmc.github.io/2019/05/06/predicting-yield-1/) we introduced the basics without filling in the blanks. In this post and others to follow we'll attempt to do so.
 
-### Opposites Attract
+### Poles Apart
 
 One reason for our project's delay was that it had opposing goals. On the one hand, we wanted to investigate low-cost aerial methods of photograohy in agriculture. This was motivated by personal interest along with a conviction that farmers under-utilize available remote sensing technology, perhaps assuming that these technologies are too complex or expensive. On the other hand, we wanted to answer questions that demand a level of precision regarding our tools and methods. Exploring low-cost methods while seeking to answer specific empirical questions raised a dilemma. 
