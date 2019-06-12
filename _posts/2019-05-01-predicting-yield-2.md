@@ -13,6 +13,6 @@ Our project was extended over a second and then a third season after too much ra
 
 ### Poles Apart
 
-One reason for our project's delay was that it had opposing goals. On the one hand, we wanted to investigate low-cost aerial methods of photography in agriculture. This was motivated by personal interest along with a conviction that farmers under-utilize available remote sensing technology, perhaps assuming that it's too complex or expensive. On the other hand, we wanted to answer questions that demanded a level of precision regarding our choice of tools and methods. 
+One reason for our project's delay was that it had conflicting goals. On the one hand, we wanted to investigate low-cost aerial methods in agriculture. This was motivated by personal interest along with the conviction that farmers under-utilize  remote sensing technology, perhaps assuming that it's too complex or expensive. On the other hand, we wanted to answer tough  questions demanding a level of precision regarding our choice of tools and methods. 
 
 While keen to answer questions using methods that are accessible and available at modest cost we also felt it reasonable to see how far such methods might be pushed in answering the more difficult ones. Our interest was to discover what types of vegetation index are best at correlating and predicting sugarcane yield. The first question is correlative and we assumed it would surrender to whatever method we chose. The second involved prediction and we thought it would be more difficult to answer unless the data captured was of high quality.
