@@ -13,4 +13,4 @@ Our project was extended over a second and third season after too much rain and 
 
 Our interest was to discover what kinds of vegetation indexes were best at 1) correlating with and 2) predicting sugarcane yield. The first question is correlative and we assumed it would surrender to whatever method we chose (we were partly right). The second was much harder. It turned out to be far more challenging unless the data captured was of much higher quality.
 
-![RGB_Composite]({{ site.url }}/assets/fastie-results.png){:height="400px" width="400px"} 
+![RGB_Composite]({{ site.url }}/assets/fastie-results.png){:height="350px" width="350px"} 
