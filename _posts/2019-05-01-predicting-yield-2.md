@@ -17,6 +17,6 @@ Our interest was to discover what kinds of vegetation indexes were best at 1) co
 
 An effective spectral index is built in stages by capturing light of the right band, at the right time of day, during the right part of the season. During our study it became apparent that the ability to place a camera in reproducible position for sufficient periods was the determining factor regarding whether our data could serve for more than qualitative assessment. Likewise, it became clear that the ability to capture in the narrowest band possible with minimum distortion was crucial.
 
-![RGB_Composite]({{ site.url }}/assets/fastie-results.png){:height="300px" width="225px"} 
+![RGB_Composite]({{ site.url }}/assets/fastie-results.png){:height="300px" width="475px"} 
 
 A vegetation index can be created using only a single consumer digital camera as all consumer sensors are sensitive in the near infrared range. If the camera is modified to remove the IR blocking filter and a dual band pass filter is substituted (such that one channel captures visible light and either of the other two captures NIR) this leaves either the Green or the Blue channel available to capture NIR. However, in this scenario selecting which of the Blue or Green channel to use has an impact on the index and neither is likely to generate a result comparable to another taken on a different day.
