@@ -19,4 +19,4 @@ An effective spectral index is built in stages by capturing light of the right b
 
 ![RGB_Composite]({{ site.url }}/assets/fastie-results.png){:height="300px" width="430px"} 
 
-A vegetation index may be created using only a single consumer digital camera as all consumer sensors are sensitive in the near infrared range. If the camera is modified such that one channel captures visible light and either of the other two channels capture NIR light (by removing the IR blocking filter and inserting a dual band pass filter) this leaves either the Green or the Blue channel available to capture NIR.
+A vegetation index may be created using only a single consumer digital camera as all consumer sensors are sensitive in the near infrared range. If the camera is modified such that one channel captures visible light and either of the other two channels capture NIR light (by removing the IR blocking filter and inserting a dual band pass filter) then this leaves either the Green or the Blue channel to to capture the NIR band.
