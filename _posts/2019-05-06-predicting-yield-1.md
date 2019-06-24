@@ -23,7 +23,7 @@ We asked two questions:
 * Are models of acquired multi-spectral imagery predictive of yield?
 
 
- To answers these questions a study area was set aside, planted and harvested over two successive seasons. We used a Latin Square design divided into 30 sections over an area of 1200 by 60 ft. Here is a overview of the area located in Houma, LA.
+ To answers these questions a study area was set aside, planted and harvested over ~~two~~ three successive seasons. We used a Latin Square design divided into 30 sections over an area of 1200 by 60 ft. Here is a overview of the area located in Houma, LA.
 
 ![Study Area]({{ site.url }}/assets/study-area.png){:height="200px" width="850px"} 
 
