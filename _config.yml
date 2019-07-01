@@ -7,7 +7,7 @@ relative_permalinks: false
 # Setup
 title:               'terr&eacute; bon'
 tagline:             ' / the good earth'
-description:         'An experienced full-stack genomics data engineer and musician (CDBaby <a href="https://store.cdbaby.com/cd/thefreddiekingdom">here</a>) with a thought: while technology promises abundance it has left us wanting. More than technology we need <a href="https://www.ted.com/talks/matthieu_ricard_on_the_habits_of_happiness">compassion.</a>'
+description:         'Full-stack genomics data engineer and musician (CDBaby <a href="https://store.cdbaby.com/cd/thefreddiekingdom">here</a>) has a thought: technology promises abundance but leaves us wanting. WTF. More than technology we need <a href="https://www.ted.com/talks/matthieu_ricard_on_the_habits_of_happiness">compassion.</a>'
 url:                 https://geraldmc.github.io/
 baseurl:             ''
 paginate:            5
