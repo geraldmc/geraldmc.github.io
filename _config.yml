@@ -13,7 +13,6 @@ baseurl:             ''
 paginate:            5
 exclude:             [CNAME, Gemfile, README.md, LICENSE.md, scratch.md]
 
-Full-stack genomics data engineer. Independent consultant. Entrepreneur in a love-hate relationship with the field of bioinformatics.
 # About/contact
 author:
   name:              Gerald McCollam
