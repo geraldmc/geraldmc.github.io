@@ -28,8 +28,7 @@ The above extends the previous command in part I in the several ways:
 + It processes bands 3-4-5 and creates a color-corrected image.
 + It uploads the resulting image to a bucket on Amazon S3. 
 
-Up to now, it's assumed that Docker is run locally and that image data retrieved and processed is likewise. However, there are significant storage and performance costs when running things this way. In fact, unless you plan to use Landsat only once or twice, running locally is not a good solution. Another option is to use a cloud provider like Amazon. AWS EC2 and S3 services can provide a significantly faster network while isolating and protecting things. AWS is not free, but over time you’ll avoid wasted effort. Plus, you'll have CPU enough on your local box to watch Netflix while processing your images in the cloud. 
-
+Up to now, it's assumed that Docker is run locally and that image data retrieved and processed is likewise. However, there are significant storage and performance costs when running things this way. Unless you plan to use Landsat only once or twice, running locally is not a good route. Rather one should use a cloud provider like Amazon. AWS EC2 and S3 services can provide a significantly faster network while offering tighter security. AWS is not free, but over time you’ll avoid wasted efforts. Plus, you'll have CPU enough on your local box to binge the latest series on Netflix all while processing your images in the cloud. 
 
 
 
